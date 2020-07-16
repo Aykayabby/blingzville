@@ -10,26 +10,18 @@
 </head>
 <body>
 
-    
-    <input class="hidden" type="checkbox" id="home" name="home" value="home">
-    <input class="hidden" type="checkbox" id="about" name="about" value="about">
-    <input class="hidden" type="checkbox" id="contact" name="contact" value="contact">
-    <input class="hidden" type="checkbox" id="wishlist" name="wishlist" value="wishlist">
-    <input class="hidden" type="checkbox" id="support" name="support" value="support">
-    <input class="hidden" type="checkbox" id="help" name="help" value="help">
-
-            
+  
 
     <header id="mainHead">
         <h1 title="YOUNG BILL"><img src="" alt=""> Practice</h1>
 
         <ul>
-            <li><label for="home"><span id="a">HOME</span> <span id="b">HOME</span></label></li>
-            <li><label for="about"><span id="a">ABOUT</span> <span id="b">ABOUT</span></label></li>
-            <li><label for="contact"><span id="a">CONTACT</span> <span id="b">CONTACT</span></label></li>
-            <li><label for="wishlist"><span id="a">WISHLIST</span> <span id="b">WISHLIST</span></label></li>
-            <li><label for="support"><span id="a">SUPPORT</span> <span id="b">SUPPORT</span></label></li>
-            <li><label for="help"><span id="a">HELP</span> <span id="b">HELP</span></label></li>
+            <li><label for="home"><span id="a" onclick="toggleNavH()">HOME</span> </label></li>
+            <li><label for="about"><span id="a" onclick="toggleNavA()">ABOUT</span> </label></li>
+            <li><label for="contact"><span id="a" onclick="toggleNavB()">CONTACT</span> </label></li>
+            <li><label for="wishlist"><span id="a" onclick="toggleNavC()">WISHLIST</span></label></li>
+            <li><label for="support"><span id="a"onclick="toggleNavD()">SUPPORT</span></label></li>
+            <li><label for="help"><span id="a" onclick="toggleNavE()">HELP</span> </label></li>
          
         </ul>
 
@@ -37,7 +29,7 @@
     </header>
 
     <main id="A">
-        <h1>About</h1>
+        <h1 id="header">About</h1>
 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Nam semper magna id aliquam feugiat. Curabitur pellentesque
@@ -116,6 +108,6 @@
         egestas purus.
     </section>
     
-
+<script src="script.js"></script>
 </body>
 </html>

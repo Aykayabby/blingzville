@@ -7,8 +7,8 @@
 }
 
 html{
-    background: red;
-
+    background: gray;
+    transition: .3s all ease;
 }
 
 .hidden{
@@ -17,7 +17,6 @@ html{
 
 #b{
     color: brown;
-    display: none;
 }
 
 
@@ -51,59 +50,72 @@ html{
 #mainHead ul li label{
     color: blue;
     cursor: pointer;
-    transition: .5s ease;
 }
 #mainHead ul li label:hover{
-    color: royalblue;
+    color: goldenrod;
     cursor: pointer;
-    font-size: larger;
 }
 
 #A{
     background: black;
-    padding: 2em;
-    color: white;
-    position: relative;
-    display: none;
-    transition: .5s ease;
+    padding: 5em 2em;
+    height: 100vh;
+    color: red;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+    transition: .5s all ease;
 }
 
 #B{
     padding: 2em;
     background-color: darksalmon;
-    position: relative;
-    display: none;
-    transition: .5s ease;
+    visibility: hidden;
+    padding: 5em 2em;
+    height: 100vh;
+    position: absolute;
+    transition: .5s all ease;
+    color: snow;
 }
 
 #C{
     padding: 2em;
     background-color: darkcyan;
-    position: relative;
-    display: none;
-    transition: .5s ease;
+    position: absolute;
+    visibility: hidden;
+    padding: 5em 2em;
+    height: 100vh;
+    transition: .5s all ease;
+    color: lawngreen;
+    
 }
 
 
 #D{
     padding: 2em;
-    position: absolute;
     background-color: darkviolet;
-    display: none;
-    transition: .5s ease;
+    visibility: hidden;
+    padding: 5em 2em;
+    height: 100vh;
+    position: absolute;
+    transition: .5s all ease;
+    color: burlywood;
 }
 
 
 #E{
     padding: 2em;
-    position: absolute;
+    color: deeppink;
     background-color: chartreuse;
-    display: none;
-    transition: .5s ease;
+    visibility: hidden;
+    position: absolute;
+    padding: 5em 2em;
+    height: 100vh;
+    transition: .5s all ease;
 }
 
 
-/* HOME navigation */
+/* HOME navigation 
 #home:checked ~ #mainHead label #a{
     display: none;
 }
@@ -132,7 +144,7 @@ html{
  }
 
 
- /* ABOUT navigation */
+  /*ABOUT navigation 
 #about:checked ~ #mainHead label #a{
     display: none;
 }
@@ -158,4 +170,4 @@ html{
 
 #about:checked ~ #E{
    display: none;
-}
+} */
