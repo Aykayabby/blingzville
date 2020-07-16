@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Changa|Cookie|Notable|Lobster|Inconsolata');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background: red;
+
+}
+
+.hidden{
+    
+}
+
+#b{
+    color: brown;
+    display: none;
+}
+
+
+#mainHead{   
+    background-color: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    z-index: 88;
+}
+
+
+#mainHead h1{
+    letter-spacing: .9px;
+    color: goldenrod;   
+    
+}
+
+#mainHead ul{
+    padding-top: 20px;
+   text-align: right;
+    letter-spacing: .9px;   
+}
+
+#mainHead ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: .7em;
+    
+}
+#mainHead ul li label{
+    color: blue;
+    cursor: pointer;
+    transition: .5s ease;
+}
+#mainHead ul li label:hover{
+    color: royalblue;
+    cursor: pointer;
+    font-size: larger;
+}
+
+#A{
+    background: black;
+    padding: 2em;
+    color: white;
+    position: relative;
+    display: none;
+    transition: .5s ease;
+}
+
+#B{
+    padding: 2em;
+    background-color: darksalmon;
+    position: relative;
+    display: none;
+    transition: .5s ease;
+}
+
+#C{
+    padding: 2em;
+    background-color: darkcyan;
+    position: relative;
+    display: none;
+    transition: .5s ease;
+}
+
+
+#D{
+    padding: 2em;
+    position: absolute;
+    background-color: darkviolet;
+    display: none;
+    transition: .5s ease;
+}
+
+
+#E{
+    padding: 2em;
+    position: absolute;
+    background-color: chartreuse;
+    display: none;
+    transition: .5s ease;
+}
+
+
+/* HOME navigation */
+#home:checked ~ #mainHead label #a{
+    display: none;
+}
+#home:checked ~ #mainHead label #b{
+    display: inline-block;
+}
+
+#home:checked ~ #A{
+    display: inline-block;
+}
+
+#home:checked ~ #B{
+   display: none;
+}
+
+#home:checked ~ #C{
+    display: none;
+ }
+
+ #home:checked ~ #D{
+    display: none;
+ }
+
+ #home:checked ~ #E{
+    display: none;
+ }
+
+
+ /* ABOUT navigation */
+#about:checked ~ #mainHead label #a{
+    display: none;
+}
+#about:checked ~ #mainHead label #b{
+    display: inline-block;
+}
+
+#about:checked ~ #B{
+    display: inline-block;
+}
+
+#about:checked ~ #home{
+    content: none;
+}
+
+#about:checked ~ #C{
+    display: none;
+}
+
+#about:checked ~ #D{
+    display: none;
+}
+
+#about:checked ~ #E{
+   display: none;
+}
