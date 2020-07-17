@@ -11,10 +11,6 @@ html{
     transition: .3s all ease;
 }
 
-.hidden{
-    
-}
-
 #b{
     color: brown;
 }
@@ -22,6 +18,7 @@ html{
 
 #mainHead{   
     background-color: black;
+    padding: .5em;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
@@ -31,31 +28,53 @@ html{
 
 #mainHead h1{
     letter-spacing: .9px;
-    color: goldenrod;   
+    color: gainsboro;   
     
 }
 
 #mainHead ul{
     padding-top: 20px;
-   text-align: right;
+    padding-right: 50px;
+    text-align: right;
     letter-spacing: .9px;   
 }
 
 #mainHead ul li{
     list-style-type: none;
     display: inline-block;
-    padding-right: .7em;
-    
-}
-#mainHead ul li label{
-    color: blue;
-    cursor: pointer;
-}
-#mainHead ul li label:hover{
-    color: goldenrod;
+    padding-right: .7em; 
+    color: grey;
     cursor: pointer;
 }
 
+#mainHead ul li:hover{
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+#mainHead ul li i{
+    display: block;
+    background-color: goldenrod;
+    width: 0;
+    height: 2px;
+    transition: .4s ease-in-out;
+}
+#mainHead ul li:hover .iHover{
+    display: block;
+    background-color: goldenrod;
+    width: 15px;
+    height: 2px;
+}
+
+#H{
+    background: wheat;
+    padding: 5em 2em;
+    height: 100vh;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    transition: .5s all ease;
+}
 #A{
     background: black;
     padding: 5em 2em;
