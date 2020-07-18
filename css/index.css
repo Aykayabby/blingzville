@@ -68,6 +68,7 @@ body, html{
 }
 
 #H{
+
     position: absolute;
     padding-bottom: 12%;
     width: 100%;
@@ -169,13 +170,35 @@ body, html{
     width: 90px;
 }
 
+#H #menu{
+    top: 10px;
+    float: right;
+    right: 50px;
+    font-size: 50px;
+    color: whitesmoke;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+#H #menuClose{
+    top: 10px;
+    float: right;
+    right: 50px;
+    font-size: 50px;
+    color: goldenrod;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
 #H div{
     padding: 10px 50px;
     border-top-right-radius: 30px;
     background-color: rgba(81, 81, 74, 0.9);
     text-align: left;
     height: 55vh;
-    margin-top: 13%;
+    margin: 13% 5% 10% 5%;
 }
 
 
@@ -319,55 +342,234 @@ body, html{
     height: 2px;
 }
 
-#A{
-    background: white;
-    padding: 5em 2em;
-    height: 100vh;
+@media only screen and (max-width: 800px)  {
+     
+    #H img{
+        display: none;
+    }
+
+    #H #nav{
+        display: none;
+    }
+
+    #H div{
+        padding: 10px 50px;
+        border-top-right-radius: 30px;
+        height: 55vh;
+        margin: 13% 5% 10% 5%;
+    }
+    
+
+    #H #menu{
+        top: 10px;
+        float: right;
+        right: 30px;
+        font-size: 50px;
+        color: whitesmoke;
+        position: absolute;
+        display: block;
+    }
+
+    #H #menuClose{
+        top: 10px;
+        float: right;
+        right: 30px;
+        font-size: 50px;
+        position: absolute;
+        display: none;
+    }
+
+    
+#H div h1{
+    font-size: 30px;
+    color: rgb(211, 211, 211);
+    margin-top: 19px;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+
+#H div h3{
+    font-size: 18px;
     color: goldenrod;
-    visibility: hidden;
-    position: relative;
+    letter-spacing: 5px;
+    transition: .3s ease;
+    line-height: 25px;
 }
 
-#B{
-    padding: 2em;
-    background-color: darksalmon;
-    visibility: hidden;
-    padding: 5em 2em;
-    position: relative;
-    height: 100vh;
-    color: snow;
+#H h1 span{
+    color: goldenrod;
+    transition: .5s ease;
 }
 
-#C{
-    padding: 2em;
-    background-color: darkcyan;
-    position: relative;
-    visibility: hidden;
-    padding: 5em 2em;
-    height: 100vh;
-    color: lawngreen;
+
+#H h1:hover span{
+    color: rgb(211, 211, 211);
+}
+
+
+#H h3 span{
+    color: white;
+    transition: .5s ease;
+}
+
+#H h3:hover{
+    color: white;
+}
+
+#H h3 i{
+    border: 1px solid goldenrod;
+    margin-top: 5px;
+    width: 0;
+    display: block;
+    margin-left: 55px;
+    transition: .4s ease;
+    opacity: 0;
+}
+
+#H h3:hover span{
+    color: goldenrod;
+}
+#H h3:hover i{
+    width: 300px;
+    opacity: 1;
+}
+
+
+    #H #icons{
+        display: grid;
+        grid-template-columns: 11% 11% 11%;
+        margin-top: 9px;
+        text-align: center;
+      
+    }
+
+#H #icons .fa{
+    display: inline-block;
+    padding: 10px;
+    width: 20px;
+    color: dimgray;
+    background-color: rgb(64, 56, 56);
+    font-size: 20px;
+    border-radius: 50%;
+    transition: .3s ease;
+    opacity: .8;
+}
+
+#H #icons .fa:hover{
+    color: goldenrod;
+    background-color: white;
+    opacity: 1;
+}
+
+}
+
+@media only screen and (max-width: 600px)  {
+    #H div{
+        margin-top: 20%;
+        margin-right: 10%;
+        margin-left: 10%;        
+    }
+    #H #nav{
+        display: none;
+    }
+
+    #H #menu{
+        top: 10px;
+        float: right;
+        right: 30px;
+        font-size: 30px;
+        color: whitesmoke;
+        position: absolute;
+        display: block;
+    }
     
-}
+    #H #menuClose{
+        top: 10px;
+        float: right;
+        right: 30px;
+        font-size: 30px;
+        position: absolute;
+        display: none;
+    }
 
-
-#D{
-    padding: 2em;
-    background-color: darkviolet;
-    visibility: hidden;
-    padding: 5em 2em;
-    position: relative;
-    height: 100vh;
-    color: burlywood;
-}
-
-
-#E{
-    padding: 2em;
-    color: deeppink;
-    background-color: chartreuse;
-    visibility: hidden;
-    position: relative;
-    padding: 5em 2em;
-    height: 100vh;
     
+#H div h1{
+    font-size: 30px;
+    color: rgb(211, 211, 211);
+    margin-top: 19px;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+
+#H div h3{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 5px;
+    transition: .3s ease;
+    line-height: 25px;
+}
+
+#H h1 span{
+    color: goldenrod;
+    transition: .5s ease;
+}
+
+
+#H h1:hover span{
+    color: rgb(211, 211, 211);
+}
+
+
+#H h3 span{
+    color: white;
+    transition: .5s ease;
+}
+
+#H h3:hover{
+    color: white;
+}
+
+#H h3 i{
+    border: 1px solid goldenrod;
+    margin-top: 5px;
+    width: 150px;
+    display: block;
+    margin-left: 55px;
+    transition: .4s ease;
+    opacity: 1;
+}
+
+#H h3:hover span{
+    color: goldenrod;
+}
+#H h3:hover i{
+    width: 150px;
+    opacity: 1;
+}
+
+
+    #H #icons{
+        display: grid;
+        grid-template-columns: 22% 22% 22%;
+        margin-top: 9px;
+        text-align: right;
+      
+    }
+
+#H #icons .fa{
+    display: inline-block;
+    padding: 10px;
+    width: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: goldenrod;
+    background-color: white;
+    opacity: 1;
+}
+
+#H #icons .fa:hover{
+    color: goldenrod;
+    background-color: white;
+    opacity: 1;
+}
 }
