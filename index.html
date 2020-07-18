@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/resetstylesheet.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <title>PRACTICE</title>
+    <script src="script.js"></script>
+    <title>TEST</title>
 </head>
 <body>
 
   
 
     <header id="mainHead">
-        <h1 title="YOUNG BILL"><img src="" alt=""> Practice</h1>
+        <img src="images/Blingz Ville Logo.png" alt="BV logo" title="BLINGZ VILLE">
 
         <ul>
-            <li><span id="a" onclick="toggleNavH()">HOME</span><br><i id="i1"></i><i class="iHover"></i> </li>
-            <li><span id="a" onclick="toggleNavA()">ABOUT</span><br><i id="i2"></i><i class="iHover"></i> </li>
-            <li><span id="a" onclick="toggleNavB()">CONTACT</span><br><i id="i3"></i><i class="iHover"></i> </li>
-            <li><span id="a" onclick="toggleNavC()">WISHLIST</span><br><i id="i4"></i><i class="iHover"></i></li>
-            <li><span id="a"onclick="toggleNavD()">SUPPORT</span><br><i id="i5"></i><i class="iHover"></i></li>
-            <li><span id="a" onclick="toggleNavE()">HELP</span><br><i id="i6"></i> <i class="iHover"></i></li>
+            <li><span id="a" onclick="toggleNavH()">HOME</span><i id="i1"></i><i class="iHover" id="hov1"></i> </li>
+            <li><span id="a" onclick="toggleNavA()">ABOUT</span><i id="i2"></i><i class="iHover" id="hov2"></i> </li>
+            <li><span id="a" onclick="toggleNavB()">CONTACT</span><i id="i3"></i><i class="iHover" id="hov3"></i> </li>
+            <li><span id="a" onclick="toggleNavC()">WISHLIST</span><i id="i4"></i><i class="iHover" id="hov4"></i></li>
+            <li><span id="a"onclick="toggleNavD()">SUPPORT</span><i id="i5"></i><i class="iHover" id="hov5"></i></li>
+            <li><span id="a" onclick="toggleNavE()">HELP</span><i id="i6"></i> <i class="iHover" id="hov6"></i></li>
          
         </ul>
 
@@ -29,99 +30,57 @@
     </header>
     
     <main id="H">
-        <h1 id="header">HOME</h1>
+        <img src="images/Blingz Ville Logo.png" alt="BV logo" title="BLINGZ VILLE">
+        <div>
+            <h1 id="header">BLINGZ <span>VILLE</span></h1>
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Nam semper magna id aliquam feugiat. Curabitur pellentesque
-        magna et commodo elementum. Integer finibus lacus et leo
-        tristique, quis iaculis ex facilisis. Donec pellentesque,
-        velit ut tincidunt aliquet, sapien nibh ornare nulla, non
-        sagittis odio eros ut velit. In sagittis sem at condimentum 
-        rhoncus. Cras eu lobortis nisl. In eget nisl vel est blandit
-        viverra. Proin ante metus, aliquet ut vulputate quis, hendrerit
-        id magna. Nullam mollis quis metus vitae mollis. Pellentesque
-         fermentum justo dui.
+            <h3>Your #1 stop shop for that classy show stopper outfit! <br> <i></i></h3>
+            <nav>
+                <ul id="nav">
+                    <li><span id="a1" onclick="toggleNavH()">HOME</span><br><i class="iHover" id="homeHov1"></i> </li>
+                    <li><span id="a" onclick="toggleNavA()">ABOUT</span><br><i class="iHover" id="hov2"></i> </li>
+                    <li><span id="a" onclick="toggleNavB()">CONTACT</span><br><i class="iHover" id="hov3"></i> </li>
+                    <li><span id="a" onclick="toggleNavC()">WISHLIST</span><br><i class="iHover" id="hov4"></i></li>
+                    <li><span id="a"onclick="toggleNavD()">SUPPORT</span><br><i class="iHover" id="hov5"></i></li>
+                    <li><span id="a" onclick="toggleNavE()">HELP</span><br> <i class="iHover" id="hov6"></i></li>
+                
+                </ul>
+                
+            </nav>
+
+            <ul id="icons">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/blings_ville"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </div>
+            
     </main>
     <main id="A">
         <h1 id="header">About</h1>
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Nam semper magna id aliquam feugiat. Curabitur pellentesque
-        magna et commodo elementum. Integer finibus lacus et leo
-        tristique, quis iaculis ex facilisis. Donec pellentesque,
-        velit ut tincidunt aliquet, sapien nibh ornare nulla, non
-        sagittis odio eros ut velit. In sagittis sem at condimentum 
-        rhoncus. Cras eu lobortis nisl. In eget nisl vel est blandit
-        viverra. Proin ante metus, aliquet ut vulputate quis, hendrerit
-        id magna. Nullam mollis quis metus vitae mollis. Pellentesque
          fermentum justo dui.
     </main>
 
     <aside id="B">
         <h1>CONTACT</h1>
-        Nullam bibendum orci at sapien iaculis consequat. Suspendisse a tempus risus,
-        sed sollicitudin quam. Duis sed erat feugiat, tristique odio porta,
-        feugiat ligula. Nunc et elit at dui tincidunt varius quis at ante.
-        Mauris quis diam massa. Sed magna nisl, cursus in leo sed, maximus
-        condimentum felis. Sed faucibus tempus purus eget commodo. Curabitur
-        sem lorem, pulvinar vel libero consequat, consectetur gravida urna.
-        Vestibulum purus sem, lobortis sit amet risus quis, pulvinar elementum
-        enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        gravida dui at commodo convallis. Phasellus et hendrerit nulla, sit amet
-        sagittis arcu. Sed a urna nec velit dapibus congue. In ut nibh in lectus
-        feugiat aliquet. Duis diam ligula, imperdiet et turpis vel, consequat
-        egestas purus.
+         egestas purus.
     </aside>
     
     <section id="C">
         <h1>WISHLIST</h1>
-        Nullam bibendum orci at sapien iaculis consequat. Suspendisse a tempus risus,
-        sed sollicitudin quam. Duis sed erat feugiat, tristique odio porta,
-        feugiat ligula. Nunc et elit at dui tincidunt varius quis at ante.
-        Mauris quis diam massa. Sed magna nisl, cursus in leo sed, maximus
-        condimentum felis. Sed faucibus tempus purus eget commodo. Curabitur
-        sem lorem, pulvinar vel libero consequat, consectetur gravida urna.
-        Vestibulum purus sem, lobortis sit amet risus quis, pulvinar elementum
-        enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        gravida dui at commodo convallis. Phasellus et hendrerit nulla, sit amet
-        sagittis arcu. Sed a urna nec velit dapibus congue. In ut nibh in lectus
-        feugiat aliquet. Duis diam ligula, imperdiet et turpis vel, consequat
-        egestas purus.
+       egestas purus.
     </section>
     
     <section id="D">
         <h1>SUPPORT</h1>
-        Nullam bibendum orci at sapien iaculis consequat. Suspendisse a tempus risus,
-        sed sollicitudin quam. Duis sed erat feugiat, tristique odio porta,
-        feugiat ligula. Nunc et elit at dui tincidunt varius quis at ante.
-        Mauris quis diam massa. Sed magna nisl, cursus in leo sed, maximus
-        condimentum felis. Sed faucibus tempus purus eget commodo. Curabitur
-        sem lorem, pulvinar vel libero consequat, consectetur gravida urna.
-        Vestibulum purus sem, lobortis sit amet risus quis, pulvinar elementum
-        enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        gravida dui at commodo convallis. Phasellus et hendrerit nulla, sit amet
-        sagittis arcu. Sed a urna nec velit dapibus congue. In ut nibh in lectus
-        feugiat aliquet. Duis diam ligula, imperdiet et turpis vel, consequat
-        egestas purus.
+       egestas purus.
     </section>
     
 
     <section id="E">
         <h1>HELP</h1>
-        Nullam bibendum orci at sapien iaculis consequat. Suspendisse a tempus risus,
-        sed sollicitudin quam. Duis sed erat feugiat, tristique odio porta,
-        feugiat ligula. Nunc et elit at dui tincidunt varius quis at ante.
-        Mauris quis diam massa. Sed magna nisl, cursus in leo sed, maximus
-        condimentum felis. Sed faucibus tempus purus eget commodo. Curabitur
-        sem lorem, pulvinar vel libero consequat, consectetur gravida urna.
-        Vestibulum purus sem, lobortis sit amet risus quis, pulvinar elementum
-        enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        gravida dui at commodo convallis. Phasellus et hendrerit nulla, sit amet
-        sagittis arcu. Sed a urna nec velit dapibus congue. In ut nibh in lectus
-        feugiat aliquet. Duis diam ligula, imperdiet et turpis vel, consequat
-        egestas purus.
+       egestas purus.
     </section>
     
-<script src="script.js"></script>
 </body>
 </html>

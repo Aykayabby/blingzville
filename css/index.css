@@ -6,43 +6,40 @@
     margin: 0;
 }
 
-html{
-    background: gray;
-    transition: .3s all ease;
+body, html{
+    font-family: 'Changa', Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
 }
-
-#b{
-    color: brown;
-}
-
 
 #mainHead{   
     background-color: black;
-    padding: .5em;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-    z-index: 88;
+    padding: 15px;
+    position: relative;
+    display: none;
 }
 
 
-#mainHead h1{
-    letter-spacing: .9px;
-    color: gainsboro;   
-    
+#mainHead img{
+    color: gainsboro;  
+    height: 50px;
+    float: left;
+    margin-top: 0;
 }
 
 #mainHead ul{
-    padding-top: 20px;
-    padding-right: 50px;
+    letter-spacing: .9px;  
     text-align: right;
-    letter-spacing: .9px;   
+    padding-right: 10%;
+    line-height: 50px;
 }
 
 #mainHead ul li{
     list-style-type: none;
+    padding-left: 16px;
     display: inline-block;
-    padding-right: .7em; 
+    text-align: right;
     color: grey;
     cursor: pointer;
 }
@@ -54,11 +51,15 @@ html{
 
 #mainHead ul li i{
     display: block;
+    margin-top: -10px;
     background-color: goldenrod;
     width: 0;
     height: 2px;
     transition: .4s ease-in-out;
+    position: absolute;
+    z-index: 10;
 }
+
 #mainHead ul li:hover .iHover{
     display: block;
     background-color: goldenrod;
@@ -67,23 +68,264 @@ html{
 }
 
 #H{
-    background: wheat;
-    padding: 5em 2em;
-    height: 100vh;
-    color: white;
-    cursor: pointer;
     position: absolute;
-    transition: .5s all ease;
+    padding-bottom: 12%;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    background-image: url('../images/Blingz\ Ville\ Black.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 15s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: gradient;
+
 }
+
+@keyframes gradient{
+  
+
+    0%{
+        background-size: 100% 100%;
+    }
+    /* 5%{
+        background-size: 105% 105%
+    }
+    10%{
+        background-size: 110% 110%
+    } */
+    15%{
+        background-size: 115% 115%
+    }
+    /* 20%{
+        background-size: 120% 120%
+    }
+    25%{
+        background-size: 125% 125%
+    } */
+    30%{
+        background-size: 130% 130%
+    }
+    /* 35%{
+        background-size: 135% 135%
+    }
+    40%{
+        background-size: 140% 140%
+    } */
+    45%{
+        background-size: 145% 145%
+    }
+    /* 50%{
+        background-size: 150% 150%
+    }
+    55%{
+        background-size: 145% 145%
+    } */
+    60%{
+        background-size: 140% 140%
+    }
+    /* 65%{
+        background-size: 135% 135%
+    }
+    70%{
+        background-size: 130% 130%
+    } */
+    75%{
+        background-size: 125% 125%
+    }
+    /* 80%{
+        background-size: 120% 120%
+    }
+    85%{
+        background-size: 115% 115%
+    } */
+    90%{
+        background-size: 110% 110%
+    }
+
+    /* 95%{
+        background-size: 105% 105%
+    } */
+    100%{
+        background-size: 100% 100%
+    }
+
+}
+
+#H img{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 90px;
+}
+
+#H div{
+    padding: 10px 50px;
+    border-top-right-radius: 30px;
+    background-color: rgba(81, 81, 74, 0.9);
+    text-align: left;
+    height: 55vh;
+    margin-top: 13%;
+}
+
+
+
+#H div h1{
+    font-size: 50px;
+    color: rgb(211, 211, 211);
+    margin-top: 19px;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+
+#H div h3{
+    font-size: 30px;
+    color: goldenrod;
+    letter-spacing: 5px;
+    transition: .3s ease;
+}
+
+#H nav{
+    margin: 30px 0;
+   
+}
+
+#H #nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+#H h1 span{
+    color: goldenrod;
+    transition: .5s ease;
+}
+
+
+#H h1:hover span{
+    color: rgb(211, 211, 211);
+}
+
+
+#H h3 span{
+    color: white;
+    transition: .5s ease;
+}
+
+#H h3:hover{
+    color: white;
+}
+
+#H h3 i{
+    border: 1px solid goldenrod;
+    margin-top: 5px;
+    width: 0;
+    display: block;
+    margin-left: 55px;
+    transition: .4s ease;
+    opacity: 0;
+}
+
+#H h3:hover span{
+    color: goldenrod;
+}
+#H h3:hover i{
+    width: 300px;
+    opacity: 1;
+}
+
+
+#H #nav li{
+    font-size: 20px;
+    color: ghostwhite;
+}
+
+#H #homeHov1{
+    width: 15px;
+}
+
+#H #a1{
+    color: white;
+    margin-right: 20px;
+}
+
+#H #a{
+    color: rgb(159, 146, 146);
+    margin-right: 20px;
+}
+
+#H #a:hover{
+    color: white;
+}
+
+#H #icons{
+    display: grid;
+    grid-template-columns: 7% 7% 7%;
+    margin-top: 9px;
+    text-align: center;
+  
+}
+
+#H #icons .fa{
+    display: inline-block;
+    padding: 10px;
+    width: 20px;
+    color: dimgray;
+    background-color: rgb(64, 56, 56);
+    font-size: 20px;
+    border-radius: 50%;
+    transition: .3s ease;
+    opacity: .8;
+}
+
+#H #icons .fa:hover{
+    color: goldenrod;
+    background-color: white;
+    opacity: 1;
+}
+
+#H li{
+    list-style-type: none;
+    padding-left: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+#H nav ul i{
+    display: block;
+    margin-top: 3px;
+    background-color: goldenrod;
+    width: 0;
+    height: 2px;
+    transition: .4s ease-in-out;
+    position: absolute;
+    z-index: 10;
+}
+
+ #H nav li:hover .iHover{
+    display: block;
+    background-color: goldenrod;
+    width: 15px;
+    height: 2px;
+}
+
 #A{
-    background: black;
+    background: white;
     padding: 5em 2em;
     height: 100vh;
-    color: red;
-    cursor: pointer;
+    color: goldenrod;
     visibility: hidden;
-    position: absolute;
-    transition: .5s all ease;
+    position: relative;
 }
 
 #B{
@@ -91,20 +333,18 @@ html{
     background-color: darksalmon;
     visibility: hidden;
     padding: 5em 2em;
+    position: relative;
     height: 100vh;
-    position: absolute;
-    transition: .5s all ease;
     color: snow;
 }
 
 #C{
     padding: 2em;
     background-color: darkcyan;
-    position: absolute;
+    position: relative;
     visibility: hidden;
     padding: 5em 2em;
     height: 100vh;
-    transition: .5s all ease;
     color: lawngreen;
     
 }
@@ -115,9 +355,8 @@ html{
     background-color: darkviolet;
     visibility: hidden;
     padding: 5em 2em;
+    position: relative;
     height: 100vh;
-    position: absolute;
-    transition: .5s all ease;
     color: burlywood;
 }
 
@@ -127,66 +366,8 @@ html{
     color: deeppink;
     background-color: chartreuse;
     visibility: hidden;
-    position: absolute;
+    position: relative;
     padding: 5em 2em;
     height: 100vh;
-    transition: .5s all ease;
+    
 }
-
-
-/* HOME navigation 
-#home:checked ~ #mainHead label #a{
-    display: none;
-}
-#home:checked ~ #mainHead label #b{
-    display: inline-block;
-}
-
-#home:checked ~ #A{
-    display: inline-block;
-}
-
-#home:checked ~ #B{
-   display: none;
-}
-
-#home:checked ~ #C{
-    display: none;
- }
-
- #home:checked ~ #D{
-    display: none;
- }
-
- #home:checked ~ #E{
-    display: none;
- }
-
-
-  /*ABOUT navigation 
-#about:checked ~ #mainHead label #a{
-    display: none;
-}
-#about:checked ~ #mainHead label #b{
-    display: inline-block;
-}
-
-#about:checked ~ #B{
-    display: inline-block;
-}
-
-#about:checked ~ #home{
-    content: none;
-}
-
-#about:checked ~ #C{
-    display: none;
-}
-
-#about:checked ~ #D{
-    display: none;
-}
-
-#about:checked ~ #E{
-   display: none;
-} */
