@@ -220,9 +220,14 @@ body, html{
     font-family: 'Lobster';
 }
 
-#H nav{
+#H #nav{
     margin: 30px 0;
-   
+   display: none;
+}
+
+#H #nav li{
+    margin-bottom: 20px;
+    
 }
 
 
@@ -238,6 +243,8 @@ body, html{
 
 
 #H #nav1{
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
