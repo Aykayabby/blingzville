@@ -10,7 +10,7 @@ body, html{
     font-family: 'Changa', Arial, Helvetica, sans-serif;
     text-align: center;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #mainHead{   
@@ -70,7 +70,7 @@ body, html{
 #H{
 
     position: absolute;
-    padding-bottom: 12%;
+    padding: 13% 0 10% 50px;
     width: 100%;
     height: 100vh;
     color: black;
@@ -193,12 +193,13 @@ body, html{
 }
 
 #H div{
-    padding: 10px 50px;
+    flex-wrap: wrap;
+    padding: 10px 50px 5% 50px;
     border-top-right-radius: 30px;
     background-color: rgba(81, 81, 74, 0.9);
     text-align: left;
-    height: 55vh;
-    margin: 13% 5% 10% 5%;
+    height: 60vh;
+    margin-right: 15%;
 }
 
 
@@ -206,7 +207,7 @@ body, html{
 #H div h1{
     font-size: 50px;
     color: rgb(211, 211, 211);
-    margin-top: 19px;
+    margin-top: 79px;
     margin-bottom: 30px;
     letter-spacing: 5px;
 }
@@ -216,6 +217,7 @@ body, html{
     color: goldenrod;
     letter-spacing: 5px;
     transition: .3s ease;
+    font-family: 'Lobster';
 }
 
 #H nav{
@@ -223,7 +225,19 @@ body, html{
    
 }
 
-#H #nav{
+
+/* #H #nav{
+    display: none;
+    margin: -5% 0 0 0;
+}
+
+#H li{
+    line-height: 25px;
+    margin-bottom: 20px;
+} */
+
+
+#H #nav1{
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -296,7 +310,7 @@ body, html{
     grid-template-columns: 7% 7% 7%;
     margin-top: 9px;
     text-align: center;
-  
+    margin-bottom: 90px;
 }
 
 #H #icons .fa{
@@ -343,27 +357,40 @@ body, html{
 }
 
 @media only screen and (max-width: 800px)  {
-     
+    
+    #H{
+        padding: 10% 0 0 5%;
+    }
+
     #H img{
         display: none;
     }
 
     #H #nav{
         display: none;
+        margin: -5% 0 0 0;
+    }
+    #H #nav1{
+        display: none;
+    }
+
+    #H li{
+        line-height: 25px;
+        margin-bottom: 20px;
     }
 
     #H div{
-        padding: 10px 50px;
+        padding: 10px 50px 5% 50px;
         border-top-right-radius: 30px;
         height: 55vh;
-        margin: 13% 5% 10% 5%;
+        
     }
     
 
     #H #menu{
         top: 10px;
         float: right;
-        right: 30px;
+        right: 50px;
         font-size: 50px;
         color: whitesmoke;
         position: absolute;
@@ -373,7 +400,7 @@ body, html{
     #H #menuClose{
         top: 10px;
         float: right;
-        right: 30px;
+        right: 50px;
         font-size: 50px;
         position: absolute;
         display: none;
@@ -384,8 +411,9 @@ body, html{
     font-size: 30px;
     color: rgb(211, 211, 211);
     margin-top: 19px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     letter-spacing: 5px;
+    transition: none;
 }
 
 #H div h3{
@@ -394,11 +422,13 @@ body, html{
     letter-spacing: 5px;
     transition: .3s ease;
     line-height: 25px;
+    transition: none;
 }
 
 #H h1 span{
     color: goldenrod;
     transition: .5s ease;
+    transition: none;
 }
 
 
@@ -453,6 +483,7 @@ body, html{
     border-radius: 50%;
     transition: .3s ease;
     opacity: .8;
+    transition: none;
 }
 
 #H #icons .fa:hover{
@@ -464,19 +495,30 @@ body, html{
 }
 
 @media only screen and (max-width: 600px)  {
+
+    #H{
+        padding: 10% 0 10% 0;
+    }
+
     #H div{
         margin-top: 20%;
         margin-right: 10%;
-        margin-left: 10%;        
+        margin-left: 10%;       
+        height: 80vh; 
+        
     }
     #H #nav{
         display: none;
     }
+    #H li{
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
 
     #H #menu{
-        top: 10px;
+        top: 20px;
         float: right;
-        right: 30px;
+        right: 10px;
         font-size: 30px;
         color: whitesmoke;
         position: absolute;
@@ -484,9 +526,9 @@ body, html{
     }
     
     #H #menuClose{
-        top: 10px;
+        top: 20px;
         float: right;
-        right: 30px;
+        right: 10px;
         font-size: 30px;
         position: absolute;
         display: none;
@@ -497,8 +539,9 @@ body, html{
     font-size: 30px;
     color: rgb(211, 211, 211);
     margin-top: 19px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     letter-spacing: 5px;
+    transition: none;
 }
 
 #H div h3{
@@ -507,11 +550,12 @@ body, html{
     letter-spacing: 5px;
     transition: .3s ease;
     line-height: 25px;
+    transition: none;
 }
 
 #H h1 span{
     color: goldenrod;
-    transition: .5s ease;
+    transition: none;
 }
 
 
@@ -522,7 +566,7 @@ body, html{
 
 #H h3 span{
     color: white;
-    transition: .5s ease;
+    transition: none;
 }
 
 #H h3:hover{
@@ -535,7 +579,7 @@ body, html{
     width: 150px;
     display: block;
     margin-left: 55px;
-    transition: .4s ease;
+    transition: none;
     opacity: 1;
 }
 
@@ -553,7 +597,7 @@ body, html{
         grid-template-columns: 22% 22% 22%;
         margin-top: 9px;
         text-align: right;
-      
+        transition: none;
     }
 
 #H #icons .fa{
@@ -565,6 +609,7 @@ body, html{
     color: goldenrod;
     background-color: white;
     opacity: 1;
+    transition: none;
 }
 
 #H #icons .fa:hover{

@@ -1,0 +1,53 @@
+
+#A{
+    background: white;
+    padding: 5em 2em;
+    height: 100vh;
+    color: goldenrod;
+    display: none;
+    position: relative;
+}
+
+#B{
+    padding: 2em;
+    background-color: darksalmon;
+    display: none;
+    padding: 5em 2em;
+    position: relative;
+    height: 100vh;
+    color: snow;
+}
+
+#C{
+    padding: 2em;
+    background-color: darkcyan;
+    position: relative;
+    display: none;
+    padding: 5em 2em;
+    height: 100vh;
+    color: lawngreen;
+    
+}
+
+
+#D{
+    padding: 2em;
+    background-color: darkviolet;
+    display: none;
+    padding: 5em 2em;
+    position: relative;
+    height: 100vh;
+    color: burlywood;
+}
+
+
+#E{
+    padding: 2em;
+    color: deeppink;
+    background-color: chartreuse;
+    display: none;
+    position: relative;
+    padding: 5em 2em;
+    height: 100vh;
+    
+}
