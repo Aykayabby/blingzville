@@ -193,12 +193,11 @@ body, html{
 }
 
 #H div{
-    flex-wrap: wrap;
-    padding: 10px 50px 5% 50px;
+    padding: 35px 50px 25px 50px;
     border-top-right-radius: 30px;
     background-color: rgba(81, 81, 74, 0.9);
     text-align: left;
-    height: 60vh;
+    height: 250px;
     margin-right: 15%;
     
 }
@@ -208,7 +207,6 @@ body, html{
 #H div h1{
     font-size: 50px;
     color: rgb(211, 211, 211);
-    margin-top: 79px;
     margin-bottom: 30px;
     letter-spacing: 5px;
 }
@@ -244,8 +242,8 @@ body, html{
 
 
 #H #nav1{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -367,7 +365,7 @@ body, html{
 @media only screen and (max-width: 800px)  {
     
     #H{
-        padding: 10% 0 0 5%;
+        padding: 15% 0 0 5%;
     }
 
     #H img{
@@ -390,7 +388,7 @@ body, html{
     #H div{
         padding: 10px 50px 5% 50px;
         border-top-right-radius: 30px;
-        height: 55vh;
+        height: 220px;
         
     }
     
@@ -512,7 +510,7 @@ body, html{
         margin-top: 20%;
         margin-right: 10%;
         margin-left: 10%;       
-        height: 80vh; 
+        height: 50vh; 
         
     }
     #H #nav{
