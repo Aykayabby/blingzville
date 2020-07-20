@@ -31,12 +31,12 @@ let toggleNavH = function () {
         geti4.style.width = "0"
         geti5.style.width = "0"
         geti6.style.width = "0"
-        getMainHome.style.visibility = "visible";
-        getMain.style.visibility = "hidden";
-        getAside.style.visibility = "hidden";
-        getSection1.style.visibility = "hidden";
-        getSection2.style.visibility = "hidden";
-        getSection3.style.visibility = "hidden";
+        getMainHome.style.display = "block";
+        getMain.style.display = "none";
+        getAside.style.display = "none";
+        getSection1.style.display = "none";
+        getSection2.style.display = "none";
+        getSection3.style.display = "none";
 
     }  
 
@@ -46,6 +46,13 @@ let toggleNavH = function () {
 let toggleNavA = function () {
 
     let getMainHead = document.body.querySelector("#mainHead")
+
+    let getaTwo = document.body.querySelector("#mainHead ul .aTwo")
+    let getaThree = document.body.querySelector("#mainHead ul .aThree")
+    let getaFour = document.body.querySelector("#mainHead ul .aFour")
+    let getaFive = document.body.querySelector("#mainHead ul .aFive")
+    let getaSix = document.body.querySelector("#mainHead ul .aSix")
+
     let geti1 = document.body.querySelector("#mainHead ul #i1")
     let geti2 = document.body.querySelector("#mainHead ul #i2")
     let geti3 = document.body.querySelector("#mainHead ul #i3")
@@ -59,9 +66,17 @@ let toggleNavA = function () {
     let getSection2 = document.body.querySelector("#D")
     let getSection3 = document.body.querySelector("#E")
 
+    let getMainh1 = document.body.querySelector("#A h1")
+
     if (toggleNavStatusA === false ) {
         
         getMainHead.style.display = "block"
+
+        getaTwo.style.color = "white"
+        getaThree.style.color = "gray"
+        getaFour.style.color = "gray"
+        getaFive.style.color = "gray"
+        getaSix.style.color = "gray"
 
         geti2.style.width = "15px"
 
@@ -71,18 +86,18 @@ let toggleNavA = function () {
         geti5.style.width = "0"
         geti6.style.width = "0"
         
-        getMain.style.visibility = "visible";
+        getMain.style.display = "block";
       
-        getMainHome.style.visibility = "hidden";
-        getAside.style.visibility = "hidden";
-        getSection1.style.visibility = "hidden";
-        getSection2.style.visibility = "hidden";
-        getSection3.style.visibility = "hidden";
-        
-        document.body.querySelector("#A #header").innerHTML = "ABOUT";
+        getMainHome.style.display = "none";
+        getAside.style.display = "none";
+        getSection1.style.display = "none";
+        getSection2.style.display = "none";
+        getSection3.style.display = "none";
 
-
-        
+        setTimeout(() => {
+            getMainh1.style.visibility = "visible"
+        }, 2000);
+                
     }
 
 
@@ -91,6 +106,13 @@ let toggleNavA = function () {
 let toggleNavB = function () {
 
     let getMainHead = document.body.querySelector("#mainHead")
+
+    let getaTwo = document.body.querySelector("#mainHead ul .aTwo")
+    let getaThree = document.body.querySelector("#mainHead ul .aThree")
+    let getaFour = document.body.querySelector("#mainHead ul .aFour")
+    let getaFive = document.body.querySelector("#mainHead ul .aFive")
+    let getaSix = document.body.querySelector("#mainHead ul .aSix")
+    
     let geti1 = document.body.querySelector("#mainHead ul #i1")
     let geti2 = document.body.querySelector("#mainHead ul #i2")
     let geti3 = document.body.querySelector("#mainHead ul #i3")
@@ -108,6 +130,12 @@ let toggleNavB = function () {
 
         getMainHead.style.display = "block"
 
+        getaTwo.style.color = "gray"
+        getaThree.style.color = "white"
+        getaFour.style.color = "gray"
+        getaFive.style.color = "gray"
+        getaSix.style.color = "gray"
+        
         geti3.style.width = "15px"
 
         geti2.style.width = "0"
@@ -116,12 +144,12 @@ let toggleNavB = function () {
         geti5.style.width = "0"
         geti6.style.width = "0"
 
-        getAside.style.visibility = "visible";
-        getMainHome.style.visibility = "hidden";
-        getMain.style.visibility = "hidden";
-        getSection1.style.visibility = "hidden";
-        getSection2.style.visibility = "hidden";
-        getSection3.style.visibility = "hidden";
+        getAside.style.display = "block";
+        getMainHome.style.display = "none";
+        getMain.style.display = "none";
+        getSection1.style.display = "none";
+        getSection2.style.display = "none";
+        getSection3.style.display = "none";
         
 
 
@@ -133,6 +161,14 @@ let toggleNavB = function () {
 let toggleNavC = function () {
 
     let getMainHead = document.body.querySelector("#mainHead")
+
+    let getaTwo = document.body.querySelector("#mainHead ul .aTwo")
+    let getaThree = document.body.querySelector("#mainHead ul .aThree")
+    let getaFour = document.body.querySelector("#mainHead ul .aFour")
+    let getaFive = document.body.querySelector("#mainHead ul .aFive")
+    let getaSix = document.body.querySelector("#mainHead ul .aSix")
+
+
     let geti1 = document.body.querySelector("#mainHead ul #i1")
     let geti2 = document.body.querySelector("#mainHead ul #i2")
     let geti3 = document.body.querySelector("#mainHead ul #i3")
@@ -150,6 +186,12 @@ let toggleNavC = function () {
 
         getMainHead.style.display = "block"
 
+        getaTwo.style.color = "gray"
+        getaThree.style.color = "gray"
+        getaFour.style.color = "white"
+        getaFive.style.color = "gray"
+        getaSix.style.color = "gray"
+
         geti4.style.width = "15px"
 
         geti2.style.width = "0"
@@ -158,12 +200,12 @@ let toggleNavC = function () {
         geti5.style.width = "0"
         geti6.style.width = "0"
 
-        getSection1.style.visibility = "visible";
-        getMainHome.style.visibility = "hidden";
-        getAside.style.visibility = "hidden";
-        getMain.style.visibility = "hidden";
-        getSection2.style.visibility = "hidden";
-        getSection3.style.visibility = "hidden";
+        getSection1.style.display = "block";
+        getMainHome.style.display = "none";
+        getAside.style.display = "none";
+        getMain.style.display = "none";
+        getSection2.style.display = "none";
+        getSection3.style.display = "none";
         
 
     }
@@ -174,6 +216,14 @@ let toggleNavC = function () {
 let toggleNavD = function () {
 
     let getMainHead = document.body.querySelector("#mainHead")
+
+    let getaTwo = document.body.querySelector("#mainHead ul .aTwo")
+    let getaThree = document.body.querySelector("#mainHead ul .aThree")
+    let getaFour = document.body.querySelector("#mainHead ul .aFour")
+    let getaFive = document.body.querySelector("#mainHead ul .aFive")
+    let getaSix = document.body.querySelector("#mainHead ul .aSix")
+
+
     let geti1 = document.body.querySelector("#mainHead ul #i1")
     let geti2 = document.body.querySelector("#mainHead ul #i2")
     let geti3 = document.body.querySelector("#mainHead ul #i3")
@@ -191,6 +241,12 @@ let toggleNavD = function () {
 
         getMainHead.style.display = "block"
 
+        getaTwo.style.color = "gray"
+        getaThree.style.color = "gray"
+        getaFour.style.color = "gray"
+        getaFive.style.color = "white"
+        getaSix.style.color = "gray"
+
         geti5.style.width = "15px"
 
         geti2.style.width = "0"
@@ -199,12 +255,12 @@ let toggleNavD = function () {
         geti1.style.width = "0"
         geti6.style.width = "0"
 
-        getSection2.style.visibility = "visible";
-        getMainHome.style.visibility = "hidden";
-        getAside.style.visibility = "hidden";
-        getMain.style.visibility = "hidden";
-        getSection1.style.visibility = "hidden";
-        getSection3.style.visibility = "hidden";
+        getSection2.style.display = "block";
+        getMainHome.style.display = "none";
+        getAside.style.display = "none";
+        getMain.style.display = "none";
+        getSection1.style.display = "none";
+        getSection3.style.display = "none";
         
     }
 
@@ -213,6 +269,14 @@ let toggleNavD = function () {
 let toggleNavE = function () {
 
     let getMainHead = document.body.querySelector("#mainHead")
+
+    let getaTwo = document.body.querySelector("#mainHead ul .aTwo")
+    let getaThree = document.body.querySelector("#mainHead ul .aThree")
+    let getaFour = document.body.querySelector("#mainHead ul .aFour")
+    let getaFive = document.body.querySelector("#mainHead ul .aFive")
+    let getaSix = document.body.querySelector("#mainHead ul .aSix")
+
+
     let geti1 = document.body.querySelector("#mainHead ul #i1")
     let geti2 = document.body.querySelector("#mainHead ul #i2")
     let geti3 = document.body.querySelector("#mainHead ul #i3")
@@ -230,6 +294,12 @@ let toggleNavE = function () {
         
         getMainHead.style.display = "block"
 
+        getaTwo.style.color = "gray"
+        getaThree.style.color = "gray"
+        getaFour.style.color = "gray"
+        getaFive.style.color = "gray"
+        getaSix.style.color = "white"
+
         geti6.style.width = "15px"
 
         geti2.style.width = "0"
@@ -238,12 +308,12 @@ let toggleNavE = function () {
         geti5.style.width = "0"
         geti1.style.width = "0"
 
-        getSection3.style.visibility = "visible";
-        getMainHome.style.visibility = "hidden";
-        getAside.style.visibility = "hidden";
-        getMain.style.visibility = "hidden";
-        getSection2.style.visibility = "hidden";
-        getSection1.style.visibility = "hidden";
+        getSection3.style.display = "block";
+        getMainHome.style.display = "none";
+        getAside.style.display = "none";
+        getMain.style.display = "none";
+        getSection2.style.display = "none";
+        getSection1.style.display = "none";
         
     }
 

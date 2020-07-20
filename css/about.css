@@ -1,53 +1,357 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 #A{
-    background: white;
-    padding: 5em 2em;
-    height: 100vh;
+    font-size: 30px;
+    background: black;
+    color: whitesmoke;
+    position: relative;
+    display: none;
+    /* height: 100vh; */
+    text-align: left;
+    overflow-y: hidden;
+    font-family: 'Grenze Gotisch';
+}
+
+/* About us */
+
+#A #Afirst{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding-left: 60px;
+    
+}
+
+/* Header */
+#A #Afirst h1{
+    font-size: 80px;
+    margin-bottom: 30px;
     color: goldenrod;
-    display: none;
-    position: relative;
+    font-family: 'Changa';
+    letter-spacing: 2px;
+    animation: 2s fadeIn;
+    animation-fill-mode: both;
+    visibility: hidden;
+}
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+/* Pin icon */
+#A #Afirst i{
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    opacity: .7;
+
 }
 
-#B{
-    padding: 2em;
-    background-color: darksalmon;
-    display: none;
-    padding: 5em 2em;
-    position: relative;
-    height: 100vh;
-    color: snow;
+#A #Afirst section{
+    display: flex;
+   
 }
 
-#C{
-    padding: 2em;
-    background-color: darkcyan;
-    position: relative;
-    display: none;
-    padding: 5em 2em;
-    height: 100vh;
-    color: lawngreen;
+#A #Afirst img{
+    width: 35vw;
+    margin-right: 50px;
+    margin-bottom: 50px;
     
 }
 
 
-#D{
-    padding: 2em;
-    background-color: darkviolet;
-    display: none;
-    padding: 5em 2em;
-    position: relative;
-    height: 100vh;
-    color: burlywood;
+#A #Afirst p{
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    padding-right: 200px;
+    
+
+}
+
+/* Vision and mission */
+
+#A #Asecond{
+    display: flex;
+    flex-flow: row ;
+    padding: 0 50px;
+}
+
+#A #Asecond #DivVision{
+    margin-right: 200px;
+}
+
+#A #Asecond div h2, #A #Athird h2{
+    letter-spacing: 2px;
+    color: goldenrod;
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
 
-#E{
-    padding: 2em;
-    color: deeppink;
-    background-color: chartreuse;
-    display: none;
-    position: relative;
-    padding: 5em 2em;
-    height: 100vh;
+/* Values */
+
+#A #Athird{
+    margin-top: 50px;
+    display: block;
+    padding: 0 50px;
+    text-align: center;
+}
+
+#A #Athird p{
+    padding-left: 120px;
+    padding-right: 120px;
+    text-align: justify;
     
+}
+
+/* Footer */
+footer{
+    bottom: 0;
+    text-align: center;
+    display: block;
+    font-family: 'Oswald';
+}
+
+footer ul{
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    font-size: 20px;
+    border: 0.2px solid rgb(101, 100, 100);
+    border-bottom: none;
+}
+
+footer li{
+    list-style-type: none;
+    line-height: 50px; 
+    border-right: 0.2px solid rgb(101, 100, 100);
+}
+
+footer a{
+    color: gray;
+    text-decoration: none;
+}
+
+footer #footerIcon{
+    color: gray;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    
+}
+
+footer p{
+    border: 0.2px solid rgb(101, 100, 100);
+    font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+
+@media only screen and (max-width: 825px) {
+    #mainHead ul{
+        visibility: hidden;
+    }
+
+    #mainHead #menuBar{
+        opacity: 1;
+    }
+
+    #A #Afirst h1{
+        font-size: 70px;
+        margin-bottom: 30px;
+        
+    }
+
+    #A #Afirst h1 i{
+        font-size: 20px;
+    }
+
+    #A #Afirst img{
+        width: 40vw;
+        margin-bottom: 50px;
+        
+    }
+
+    #A #Afirst section p{
+        display: block;
+        width: 35vw;
+        text-align: left;
+        font-size: 25px;
+    }
+
+    
+/* Vision and mission */
+
+#A #Asecond{
+    font-size: 25px;
+}
+
+#A #Asecond div h2, #A #Athird h2{
+    letter-spacing: 2px;
+    color: goldenrod;
+    font-size: 38px;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+#A #Asecond #DivVision{
+    margin-right: 20vw;    
+}
+
+
+
+/* Values */
+
+#A #Athird{
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}
+
+#A #Athird p{
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #mainHead #menuBar, #mainHead #menuBarClose{
+        font-size: 35px;
+    }
+
+    #A{
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        overflow-x: hidden;
+    }
+
+    #A #Afirst{
+        font-size: 20px;
+        display: grid;
+        grid-template-rows: auto auto;
+        
+    }
+
+    #A #Afirst h1{
+        font-size: 50px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    #A #Afirst h1 i{
+        font-size: 15px;
+    }
+    
+    #A #Afirst section{
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    #A #Afirst img{
+        width: 80vw;
+        margin-bottom: 50px;
+        
+    }
+
+    #A #Afirst section p{
+        display: block;
+        width: 80vw;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    
+/* Vision and mission */
+
+#A #Asecond{
+    display: grid;
+    grid-template-rows: auto auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+#A #Asecond #DivVision{
+    margin-right: 0;
+    
+}
+
+#A #Asecond div h2, #A #Athird h2{
+    letter-spacing: 2px;
+    color: goldenrod;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+
+/* Values */
+
+#A #Athird{
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+#A #Athird p{
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    
+}
+
+    #A footer{
+        width: 90vw;
+        margin-left: 4vw;
+        margin-right: 0;
+    }
+
+    
+footer ul{
+    margin-top: 120px;
+    font-size: 15px;
+    
+}
+
+footer li{
+    padding-top: 10px;
+    line-height: 20px; 
+    padding-bottom: 10px;
+}
+
+footer #footerIcon{
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    font-size: 25px;
+}
+
+footer p{
+    font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 15px;
+    
+}
+
 }

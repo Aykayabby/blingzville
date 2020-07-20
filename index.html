@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="css/resetstylesheet.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/resetstylesheet.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="scripts/script.js"></script>
     <script src="scripts/script2.js"></script>
+    <script src="scripts/script3.js"></script>
     <link rel="icon" href="images/Blingz Ville Logo.png" type="image/icon type">
     <title>BLINGZ VILLE</title>
 </head>
@@ -20,17 +23,21 @@
     <header id="mainHead">
         <img name="Logo" src="images/Blingz Ville Logo.png" alt="BV logo" title="BLINGZ VILLE">
 
+         <!-- Navigation buttons -->
+         <i id="menuBar" class="fa fa-bars" onclick="toggleMenuBar()"></i>
+         <i id="menuBarClose" class="fa fa-times" onclick="toggleMenuBar()"></i>
+        
         <ul>
-            <li><span id="a" onclick="toggleNavH()">HOME</span><i id="i1"></i><i class="iHover" id="hov1"></i> </li>
-            <li><span id="a" onclick="toggleNavA()">ABOUT</span><i id="i2"></i><i class="iHover" id="hov2"></i> </li>
-            <li><span id="a" onclick="toggleNavB()">CONTACT</span><i id="i3"></i><i class="iHover" id="hov3"></i> </li>
-            <li><span id="a" onclick="toggleNavC()">WISHLIST</span><i id="i4"></i><i class="iHover" id="hov4"></i></li>
-            <li><span id="a"onclick="toggleNavD()">SUPPORT</span><i id="i5"></i><i class="iHover" id="hov5"></i></li>
-            <li><span id="a" onclick="toggleNavE()">HELP</span><i id="i6"></i> <i class="iHover" id="hov6"></i></li>
+            <li><span id="a" class="aOne" onclick="toggleNavH()">HOME</span><i id="i1"></i><i class="iHover" id="hov1"></i> </li>
+            <li><span id="a" class="aTwo" onclick="toggleNavA()">ABOUT</span><i id="i2"></i><i class="iHover" id="hov2"></i> </li>
+            <li><span id="a" class="aThree" onclick="toggleNavB()">CONTACT</span><i id="i3"></i><i class="iHover" id="hov3"></i> </li>
+            <li><span id="a" class="aFour" onclick="toggleNavC()">WISHLIST</span><i id="i4"></i><i class="iHover" id="hov4"></i></li>
+            <li><span id="a" class="aFive" onclick="toggleNavD()">SUPPORT</span><i id="i5"></i><i class="iHover" id="hov5"></i></li>
+            <li><span id="a" class="aSix" onclick="toggleNavE()">HELP</span><i id="i6"></i> <i class="iHover" id="hov6"></i></li>
          
         </ul>
 
-        
+               
     </header>
     
     <!-- Home Page -->
@@ -87,32 +94,204 @@
 
     <!-- Second Page -->
     <main id="A">
-        <h1 id="header">About</h1>
-         fermentum justo dui.
+        <section id="Afirst">
+            
+            <h1><i class="fa fa-map-pin" aria-hidden="true"></i>About Us</h1>
+
+           <section>
+          
+            <p>
+                Blingz Ville is a Nigerian cloths company. 
+                We sell Abayas and other clothing accessories in wholesale and retail.
+                We also deliver worldwide. Terms and conditions apply.
+            </p>
+
+            <img src="images/abaya4.jpg" alt="Abaya image">
+           </section>
+
+        </section>
+
+        <section id="Asecond">
+            <div id="DivVision">
+                <h2>Our Vision</h2>
+
+                <p>
+                    To be the global icon for cloth commercialization.
+
+                </p>
+            </div>
+
+            <div>
+                <h2>Our Mission</h2>
+                    
+                <p>
+                    To achieve a united society that wears Abaya.
+                </p>
+            </div>
+
+        </section>
+         
+        <section id="Athird">
+            <h2>Values</h2>
+                
+            <p>
+                Integrity, quality, antiracist, creativity, newness
+                and customer satisfaction. We would go any lenght to achieve
+                the recommendation of our customers.
+            </p>
+        </section>
+        
+<!--    //Intended slide gallery...Coming soon//
+        <section id="Afourth">
+            <div>
+                //Sliding image//
+                <section id="slider">
+
+                </section>
+
+                //Non slide//
+                <section>
+
+                </section>
+
+                <section>
+
+                </section>
+
+                //Sliding image//
+                <section id="slider">
+
+                </section>
+            </div>
+        </section> -->
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="tel:0803-452-7116">080-3452-7116, </a>
+                    <a href="tel:0806-427-0421">080-6427-0421</a>
+                </li>
+                <li><a href="mailto:fatoyejoseph@gmail.com?body=Good day Blingz Ville,">info@blingzville.com</a></li>
+                <li id="footerIcon"> 
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/blings_ville"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+
+            </ul>
+
+            <p>
+                © 2020 Blingz Ville. All rights reserved.
+            </p>
+        </footer>
+         
     </main>
 
     <!-- Third Page -->
     <aside id="B">
         <h1>CONTACT</h1>
          egestas purus.
+
+         <footer>
+            <ul>
+                <li>
+                    <a href="tel:0803-452-7116">080-3452-7116, </a>
+                    <a href="tel:0806-427-0421">080-6427-0421</a>
+                </li>
+                <li><a href="mailto:fatoyejoseph@gmail.com?body=Good day Blingz Ville,">info@blingzville.com</a></li>
+                <li id="footerIcon"> 
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/blings_ville"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+
+            </ul>
+
+            <p>
+                © 2020 Blingz Ville. All rights reserved.
+            </p>
+        </footer>
     </aside>
     
     <!-- Fourth Page -->
     <section id="C">
         <h1>WISHLIST</h1>
        egestas purus.
+
+       <footer>
+        <ul>
+            <li>
+                <a href="tel:0803-452-7116">080-3452-7116, </a>
+                <a href="tel:0806-427-0421">080-6427-0421</a>
+            </li>
+            <li><a href="mailto:fatoyejoseph@gmail.com?body=Good day Blingz Ville,">info@blingzville.com</a></li>
+            <li id="footerIcon"> 
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/blings_ville"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+
+        </ul>
+
+        <p>
+            © 2020 Blingz Ville. All rights reserved.
+        </p>
+    </footer>
+
     </section>
     
     <!-- Fifth Page -->
     <section id="D">
         <h1>SUPPORT</h1>
        egestas purus.
+
+       <footer>
+        <ul>
+            <li>
+                <a href="tel:0803-452-7116">080-3452-7116, </a>
+                <a href="tel:0806-427-0421">080-6427-0421</a>
+            </li>
+            <li><a href="mailto:fatoyejoseph@gmail.com?body=Good day Blingz Ville,">info@blingzville.com</a></li>
+            <li id="footerIcon"> 
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/blings_ville"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+
+        </ul>
+
+        <p>
+            © 2020 Blingz Ville. All rights reserved.
+        </p>
+    </footer>
+
     </section>
     
     <!-- Sixth Page -->
     <section id="E">
         <h1>HELP</h1>
        egestas purus.
+
+       <footer>
+        <ul>
+            <li>
+                <a href="tel:0803-452-7116">080-3452-7116, </a>
+                <a href="tel:0806-427-0421">080-6427-0421</a>
+            </li>
+            <li><a href="mailto:fatoyejoseph@gmail.com?body=Good day Blingz Ville,">info@blingzville.com</a></li>
+            <li id="footerIcon"> 
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/blings_ville"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+
+        </ul>
+
+        <p>
+            © 2020 Blingz Ville. All rights reserved.
+        </p>
+    </footer>
+
     </section>
     
 </body>

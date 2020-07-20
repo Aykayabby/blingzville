@@ -1,0 +1,43 @@
+#B{
+    padding: 2em;
+    background: black;
+    display: none;
+    padding: 5em 2em;
+    position: relative;
+    height: 100vh;
+    color: white;
+}
+
+#C{
+    padding: 2em;
+    background: black; 
+    position: relative;
+    display: none;
+    padding: 5em 2em;
+    height: 100vh;
+    color: white;
+    
+}
+
+
+#D{
+    padding: 2em;
+    background: black;
+    display: none;
+    padding: 5em 2em;
+    position: relative;
+    height: 100vh;
+    color: white;
+}
+
+
+#E{
+    padding: 2em;
+    color: white;
+    background: black;
+    display: none;
+    position: relative;
+    padding: 5em 2em;
+    height: 100vh;
+    
+}

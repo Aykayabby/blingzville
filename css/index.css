@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Changa|Cookie|Notable|Lobster|Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Changa|Cookie|Notable|Lobster|Inconsolata|Anton|Oswald:wght@200;300;400;469;500;600;700|Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 *{
@@ -11,6 +11,7 @@ body, html{
     text-align: center;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: auto
 }
 
 #mainHead{   
@@ -65,6 +66,20 @@ body, html{
     background-color: goldenrod;
     width: 15px;
     height: 2px;
+}
+
+#mainHead #menuBar, #mainHead #menuBarClose{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    z-index: 20;
+    top: 20px;
+    right: 5%;
+    opacity: 0;
+}
+
+#mainHead #menuBarClose{
+    color: goldenrod;
 }
 
 #H{
@@ -192,8 +207,13 @@ body, html{
     cursor: pointer;
 }
 
+#H #HomeDiv{       
+    height: 290px; 
+    
+}
+
 #H div{
-    padding: 35px 50px 25px 50px;
+    padding: 35px 50px 0 50px;
     border-top-right-radius: 30px;
     background-color: rgba(81, 81, 74, 0.9);
     text-align: left;
@@ -374,7 +394,8 @@ body, html{
 
     #H #nav{
         display: none;
-        margin: -5% 0 0 0;
+        margin: 2% 0 0 0;
+        padding: 6px;
     }
     #H #nav1{
         display: none;
@@ -391,7 +412,11 @@ body, html{
         height: 220px;
         
     }
-    
+
+    #H #HomeDiv{       
+        height: 220px; 
+        
+    }
 
     #H #menu{
         top: 10px;
@@ -513,9 +538,18 @@ body, html{
         height: 50vh; 
         
     }
+
+    #H #HomeDiv{       
+        height: 320px; 
+        
+    }
+
     #H #nav{
         display: none;
+        margin: 2% 0 0 0;
+        padding: 6px;
     }
+
     #H li{
         line-height: 20px;
         margin-bottom: 20px;
