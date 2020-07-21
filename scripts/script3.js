@@ -3,32 +3,7 @@
 let togglemenuBar = false;
 
 
-setInterval(() => {
-    
-    let getMenuBar = document.body.querySelector("#mainHead .nav-main #menuBar");
-    if (screen.width < "860") {
-        getMenuBar.style.visibility = "visible";
-        getMenuBar.style.opacity = "1";
-        
-    }
-    if (togglemenuBar === true && screen.width < "860") {
-        getMenuBar.style.visibility = "visible";
-        getMenuBar.style.opacity = "0";
-        
-    }
-    if (togglemenuBar === true && screen.width < "860") {
-        getMenuBar.style.visibility = "visible";
-        getMenuBar.style.opacity = "0";
-        
-    }
-    if (screen.width > "860") {
-        getMenuBar.style.visibility = "visible";
-        getMenuBar.style.opacity = "0";
- 
-    }
-}, 500);
 
-    
 let toggleMenuBar = function () {
 
     let getMenuBar = document.body.querySelector("#mainHead .nav-main #menuBar");
@@ -67,5 +42,32 @@ let toggleMenuBar = function () {
     }
   
 };
+
+setInterval(() => {
+    
+    let getMenuBar = document.body.querySelector("#mainHead .nav-main #menuBar");
+    if (screen.width < "860") {
+        getMenuBar.style.visibility = "visible";
+        getMenuBar.style.opacity = "1";
+        
+    }
+    if (togglemenuBar === true && screen.width < "860") {
+        getMenuBar.style.visibility = "visible";
+        getMenuBar.style.opacity = "0";
+        
+    }
+    if (togglemenuBar === true && screen.width < "860") {
+        getMenuBar.style.visibility = "visible";
+        getMenuBar.style.opacity = "0";
+        
+    }
+    if (screen.width > "860") {
+        getMenuBar.style.visibility = "visible";
+        getMenuBar.style.opacity = "0";
+ 
+    }
+}, 500);
+
+    
 
 
