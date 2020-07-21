@@ -256,8 +256,11 @@ body, html{
 
 #H #nav{
     margin: 30px 0;
+   display: flex;
+   flex-wrap: wrap;
+   font-size: 25px;
+   justify-content: start;
    display: none;
-   
 }
 
 #H #nav li{
