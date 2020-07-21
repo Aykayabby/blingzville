@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/wishlist.css">
+    <link rel="stylesheet" href="css/support.css">
     <link rel="stylesheet" href="css/resetstylesheet.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="scripts/script.js"></script>
@@ -37,12 +38,12 @@
             <li><span id="a" class="aThree" onclick="toggleNavB()">CONTACT</span><i id="i3"><i class="iHover" id="hov3"></i> </li>
             <li><span id="a" class="aFour" onclick="toggleNavC()">WISHLIST</span><i id="i4"><i class="iHover" id="hov4"></i></li>
             <li><span id="a" class="aFive" onclick="toggleNavD()">SUPPORT</span><i id="i5"><i class="iHover" id="hov5"></i></li>
-            <li><span id="a" class="aSix" onclick="toggleNavE()">HELP</span><i id="i6"> <i class="iHover" id="hov6"></i></li>
+            <!-- <li><span id="a" class="aSix" onclick="toggleNavE()">HELP</span><i id="i6"> <i class="iHover" id="hov6"></i></li> -->
          
         </ul>
 
         <aside class="nav-sidebar">
-            
+            <i style="cursor: pointer;" class="fa fa-times" onclick="toggleMenuBar()"></i>
             <ul>
                 
                 <li><span id="a" class="aOne" onclick="toggleNavH()">HOME</span> </li>
@@ -84,7 +85,7 @@
                     <li><span id="a" onclick="toggleNavB()">CONTACT</span><br><i class="iHover" id="hov3"></i> </li>
                     <li><span id="a" onclick="toggleNavC()">WISHLIST</span><br><i class="iHover" id="hov4"></i></li>
                     <li><span id="a"onclick="toggleNavD()">SUPPORT</span><br><i class="iHover" id="hov5"></i></li>
-                    <li><span id="a" onclick="toggleNavE()">HELP</span><br> <i class="iHover" id="hov6"></i></li>
+                    <!-- <li><span id="a" onclick="toggleNavE()">HELP</span><br> <i class="iHover" id="hov6"></i></li> -->
                 
                 </ul>
 
@@ -96,7 +97,7 @@
                     <li><span id="a" onclick="toggleNavB()">CONTACT</span><br><i class="iHover" id="hov3"></i> </li>
                     <li><span id="a" onclick="toggleNavC()">WISHLIST</span><br><i class="iHover" id="hov4"></i></li>
                     <li><span id="a"onclick="toggleNavD()">SUPPORT</span><br><i class="iHover" id="hov5"></i></li>
-                    <li><span id="a" onclick="toggleNavE()">HELP</span><br> <i class="iHover" id="hov6"></i></li>
+                    <!-- <li><span id="a" onclick="toggleNavE()">HELP</span><br> <i class="iHover" id="hov6"></i></li> -->
                 
                 </ul>
                 
@@ -336,8 +337,16 @@
     
     <!-- Fifth Page -->
     <section id="D">
-        <h1>SUPPORT</h1>
-       egestas purus.
+        <h1>SUPPORT US TODAY <i class="fa fa-map-pin" aria-hidden="true"></i></h1>
+
+        <p id="p">Being the best comes at a price, and with your help the sky is our starting point</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="9QBQFTF2EDAZA" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_NG/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+            
 
        <footer>
         <ul>
@@ -360,8 +369,8 @@
     </footer>
 
     </section>
-    
-    <!-- Sixth Page -->
+<!--     
+    //Sixth Page
     <section id="E">
         <h1>HELP</h1>
        egestas purus.
@@ -387,6 +396,6 @@
     </footer>
 
     </section>
-    
+     -->
 </body>
 </html>

@@ -1,0 +1,120 @@
+#D{
+    font-size: 50px;
+    background: black;
+    display: none;
+    position: relative;
+    height: 125vh;
+    color: white;
+    overflow: hidden;
+}
+
+#D h1{
+    padding-bottom: 50px;
+    margin-top: 8%;
+    color: goldenrod;
+    font-size: 80px;
+    animation: 2s fadeIn;
+    animation-fill-mode: both;
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+
+#D h1 i{
+    color: gray;
+    font-size: 35px;
+}
+
+#D #p{
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    display: block;
+    width: 40vw;
+    margin-left: 30vw;
+    margin-bottom: 8vh;
+    
+}
+
+#D footer{
+    margin-top: 20%;
+}
+
+@media only screen and (max-width: 800px){
+    #D h1{
+        padding-bottom: 50px;
+        font-size: 35px;
+    }
+    #D h1 i{
+        color: gray;
+        font-size: 20px;
+    }
+    
+    #D #p{
+        font-size: 25px;
+        display: block;
+        width: 40vw;
+        margin-left: 30vw;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+}
+@media only screen and (max-width: 600px){
+    #D h1{
+        padding-bottom: 20px;
+    }
+    #D h1 i{
+        color: gray;
+        font-size: 30px;
+    }
+    
+    #D p{
+        font-size: 18px;
+        display: block;
+        width: 40vw;
+        margin-left: 30vw;
+        line-height: 22px;
+        letter-spacing: 1.5px;
+        
+    }
+        #D footer{
+            margin-left: 10px;
+        }
+        #D ul{
+           display: block;
+             word-wrap: break-word;
+             width: 80vw;
+         }
+        #D footer li{
+            border-right: none;
+            border-left: 1px solid gray;
+            padding: 5px;
+        }
+        #D footer p{
+            font-size: 20px;
+            padding: 15px 0;
+            width: 80vw;
+            margin: 0;
+        }
+}
+
+/* 
+#E{
+    padding: 2em;
+    color: white;
+    background: black;
+    display: none;
+    position: relative;
+    padding: 5em 2em;
+    height: 100vh;
+    
+} */

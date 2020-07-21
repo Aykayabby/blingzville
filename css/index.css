@@ -19,6 +19,7 @@ body, html{
     padding: 15px;
     position: relative;
     display: none;
+    overflow-y: hidden;
 }
 
 
@@ -51,10 +52,6 @@ body, html{
     color: whitesmoke;
 }
 
-/* #mainHead #horizontalNav span:hover{
-    cursor: pointer;
-    color: whitesmoke;
-} */
 
 #mainHead ul li i{
     display: block;
@@ -267,18 +264,6 @@ body, html{
     margin-bottom: 20px;
     font-size: 25px;
 }
-
-
-/* #H #nav{
-    display: none;
-    margin: -5% 0 0 0;
-}
-
-#H li{
-    line-height: 25px;
-    margin-bottom: 20px;
-} */
-
 
 #H #nav1{
     margin-top: 30px;
@@ -683,4 +668,4 @@ body, html{
     background-color: white;
     opacity: 1;
 }
-}
+}  

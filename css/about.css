@@ -179,8 +179,20 @@ footer p{
     transition: 0.3s all ease-in-out;
 }
 
+.nav-sidebar i{
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s ease;
+    margin-top: 5%;
+    margin-left: 70%;
+    margin-bottom: 0;
+    font-size: 50px;
+    color: goldenrod;
+}
+
 .nav-sidebar ul{
     padding: 0;
+    font-size: 50px;
     padding-top: 100px;
     overflow: hidden;
     transition: .5s ease;
@@ -188,6 +200,7 @@ footer p{
     grid-template-rows: auto;
     
 }
+
 /* #mainHead #menuBar, #mainHead .nav-sidebar #menuBarClose */
 
 .nav-sidebar  #menuBarClose{
@@ -241,7 +254,7 @@ footer p{
 
 
 
-@media only screen and (max-width: 825px) {
+@media only screen and (max-width: 860px) {
     #mainHead ul{
         visibility: hidden;
     }
@@ -280,14 +293,22 @@ footer p{
         opacity: 1;
     }
 
+    /* Main Page */
+
+    #A{
+        overflow-x: auto;
+    }
+
     #A #Afirst h1{
         font-size: 70px;
         margin-bottom: 30px;
-        
+        margin-left: 0;
+        padding-left: 0;
     }
 
     #A #Afirst h1 i{
         font-size: 20px;
+        
     }
 
     #A #Afirst img{
@@ -399,6 +420,7 @@ footer p{
         padding-right: 0;
         overflow: hidden;
         padding-top: 0;
+        overflow-x: visible;
               
     }
 
@@ -410,11 +432,15 @@ footer p{
     }
 
     #A #Afirst h1{
+        word-wrap: break-word;
+        display: block;
+        width: calc(70vw - 10px);
         margin-top: 15px;
         font-size: 40px;
         margin-bottom: 5px;
         text-align: left;
-        margin-left: 18vw;
+        margin-left: calc(10vw - 10px);
+        line-height: 50px;
     }
 
     #A #Afirst h1 i{
@@ -424,6 +450,7 @@ footer p{
     #A #Afirst section{
         display: grid;
         grid-template-rows: auto auto;
+        margin-left: calc(1vw - 10px);
     }
 
     #A #Afirst img{
@@ -485,56 +512,20 @@ footer p{
     font-size: 25px;
 }
 
-    /* #A footer{
-        width: 90vw;
-        margin-left: 4vw;
-        margin-right: 0;
-        font-weight: 'Oswald';
-    } */
-
-    
-/* footer ul{
-    margin-top: 120px;
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: 35% 25% 35%;
-}
-
-footer li{
-    padding-top: 10px;
-    line-height: 20px; 
-    padding-bottom: 10px;
-   
-}
-
-
-footer #footerIcon{
-    display: grid;
-    grid-template-rows: 33% 33% 33%;
-    font-size: 25px;
-}
-
-footer p{
-    font-size: 80px;
-    line-height: 50px;
-    margin-bottom: 15px;
-    
-}
- */
-
-
-#A footer{
-    margin-right: 2px;
-}
 #A ul{
-    grid-template-columns: auto 40% 30%;
+  display: block;
+    word-wrap: break-word;
 }
 
 #A footer li{
     border-right: none;
+    word-wrap: break-word;
     border-left: 1px solid gray;
     padding: 5px;
+    line-height: 25px;
+    
 }
+
 #A footer p{
     font-size: 20px;
 }

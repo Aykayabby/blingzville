@@ -1,3 +1,5 @@
+// Script for Home page nav
+
 let toggleMenuStatus = false;
 
 let toggleMenu = function () {
@@ -28,7 +30,7 @@ let toggleMenu = function () {
         getHidden2.style.visibility = "hidden";
         getHidden3.style.visibility = "hidden";
         
-
+        
 
         toggleMenuStatus = true
     }
