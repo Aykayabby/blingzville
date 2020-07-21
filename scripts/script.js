@@ -22,6 +22,8 @@ let toggleNavH = function () {
     let getSection2 = document.body.querySelector("#D")
     let getSection3 = document.body.querySelector("#E")
 
+    let getSidebar = document.body.querySelector("#mainHead .nav-sidebar");
+
     if (toggleNavStatus === false ) {
 
         getMainHead.style.display = "none"
@@ -38,6 +40,7 @@ let toggleNavH = function () {
         getSection2.style.display = "none";
         getSection3.style.display = "none";
 
+        getSidebar.style.width = "0";
     }  
 
 }
@@ -67,6 +70,8 @@ let toggleNavA = function () {
     let getSection3 = document.body.querySelector("#E")
 
     let getMainh1 = document.body.querySelector("#A h1")
+
+    let getSidebar = document.body.querySelector("#mainHead .nav-sidebar");
 
     if (toggleNavStatusA === false ) {
         
@@ -98,6 +103,8 @@ let toggleNavA = function () {
             getMainh1.style.visibility = "visible"
         }, 2000);
                 
+
+        getSidebar.style.width = "0";
     }
 
 
@@ -126,6 +133,8 @@ let toggleNavB = function () {
     let getSection2 = document.body.querySelector("#D")
     let getSection3 = document.body.querySelector("#E")
 
+    let getSidebar = document.body.querySelector("#mainHead .nav-sidebar");
+
     if (toggleNavStatusB === false ) {
 
         getMainHead.style.display = "block"
@@ -151,8 +160,7 @@ let toggleNavB = function () {
         getSection2.style.display = "none";
         getSection3.style.display = "none";
         
-
-
+        getSidebar.style.width = "0";
         
     }
 
@@ -182,6 +190,8 @@ let toggleNavC = function () {
     let getSection2 = document.body.querySelector("#D")
     let getSection3 = document.body.querySelector("#E")
 
+    let getSidebar = document.body.querySelector("#mainHead .nav-sidebar");
+
     if (toggleNavStatusC === false ) {
 
         getMainHead.style.display = "block"
@@ -207,6 +217,7 @@ let toggleNavC = function () {
         getSection2.style.display = "none";
         getSection3.style.display = "none";
         
+        getSidebar.style.width = "0";
 
     }
 
@@ -237,6 +248,8 @@ let toggleNavD = function () {
     let getSection2 = document.body.querySelector("#D")
     let getSection3 = document.body.querySelector("#E")
 
+    let getSidebar = document.body.querySelector("#mainHead .nav-sidebar");
+
     if (toggleNavStatusD === false ) {
 
         getMainHead.style.display = "block"
@@ -262,6 +275,7 @@ let toggleNavD = function () {
         getSection1.style.display = "none";
         getSection3.style.display = "none";
         
+        getSidebar.style.width = "0";
     }
 
 }
@@ -290,6 +304,8 @@ let toggleNavE = function () {
     let getSection2 = document.body.querySelector("#D")
     let getSection3 = document.body.querySelector("#E")
 
+    let getSidebar = document.body.querySelector("#mainHead .nav-sidebar");
+
     if (toggleNavStatusE === false ) {
         
         getMainHead.style.display = "block"
@@ -314,6 +330,8 @@ let toggleNavE = function () {
         getMain.style.display = "none";
         getSection2.style.display = "none";
         getSection1.style.display = "none";
+
+        getSidebar.style.width = "0";
         
     }
 

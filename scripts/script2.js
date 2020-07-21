@@ -1,7 +1,8 @@
 let toggleMenuStatus = false;
 
 let toggleMenu = function () {
-    
+
+    let width = screen.width;    
     let getHomeDiv = document.body.querySelector("#H #HomeDiv"); 
     let getNav = document.body.querySelector("#H #nav"); 
     let getNav1 = document.body.querySelector("#H #nav1"); 
@@ -33,7 +34,7 @@ let toggleMenu = function () {
     }
     else if (toggleMenuStatus === true) {
         
-        getHomeDiv.style.height = "calc(63vh - 5px)"
+        getHomeDiv.style.height = "290px"
         getNav.style.display = "none";
         getNav1.style.opacity = "1";
         getMenuBar.style.opacity = "1";
@@ -41,6 +42,18 @@ let toggleMenu = function () {
         getHidden.style.visibility = "visible";
         getHidden2.style.visibility = "visible";
         getHidden3.style.visibility = "visible";
+
+
+        if (togglemenuBar === false && width <= "600px") {
+            getHomeDiv.style.height = "320px"
+           }
+           else if (togglemenuBar === false &&  width > "600px" || width <= "825px") {
+            getHomeDiv.style.height = "220px"
+           }
+           else if (togglemenuBar === false && width > "825px") {
+            getHomeDiv.style.height = "290px"
+           }
+        
         
 
         toggleMenuStatus = false
