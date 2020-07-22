@@ -37,7 +37,7 @@ setInterval(() => {
     }
     if (w > 860) {
 
-        togglemenuBar = false;
+        // togglemenuBar = false;
         getMenuBar.style.visibility = "visible";
         getSidebar.style.width = "0";
         getSidebarI.style.opacity = "0";

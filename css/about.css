@@ -241,7 +241,7 @@ footer p{
 
 .nav-sidebar ul li:hover span{
     color: goldenrod;
-    font-size: 30px;
+    font-size: 10px;
 }
 
 
@@ -255,6 +255,15 @@ footer p{
 
 
 @media only screen and (max-width: 860px) {
+
+    Side bar times
+    .nav-sidebar i{
+        font-size: 35px;
+        
+    }
+
+
+    /* Something else */
     #mainHead ul{
         visibility: hidden;
     }
@@ -371,6 +380,12 @@ footer p{
 
 
 @media only screen and (max-width: 600px) {
+
+      Side bar times
+      .nav-sidebar {
+        padding-top: 50px;
+    }
+
 
     /* Fixed top Nav Bar */
 

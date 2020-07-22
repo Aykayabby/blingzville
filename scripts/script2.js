@@ -20,7 +20,7 @@ let toggleMenu = function () {
         getNav.style.position = "absolute";
         getNav.style.float = "left";
         getNav.style.top = "30%";
-        getHomeDiv.style.height = "90vh"
+        getHomeDiv.style.height = "80vh"
 
         getNav1.style.opacity = "0";
         getMenuBar.style.opacity = "0";
