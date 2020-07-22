@@ -8,44 +8,43 @@ setInterval(() => {
     let getMenuBar = document.body.querySelector("#mainHead .nav-main #menuBar");
     let getSidebar = document.body.querySelector("#mainHead .nav-sidebar");
     let getSidebarI = document.body.querySelector("#mainHead .nav-sidebar i");
-    var w = window.innerWidth;
+    let w = window.innerWidth;
 
  
  
  
      if (togglemenuBar === false && w <= 860) {
+         
+        // getSidebarI.style.opacity = "1";
         getMenuBar.style.visibility = "visible";
-        getMenuBar.style.opacity = "1";
         getSidebar.style.visibility = "visible";
-        // alert('false && w <= 860')
         
     }
     else if (togglemenuBar === true && w <= 860) {
         
+        // getSidebarI.style.opacity = "1";
         getMenuBar.style.visibility = "hidden";
-        getMenuBar.style.opacity = "0";
         getSidebar.style.visibility = "visible";
-        // alert('true && w <= 860')
+
     }
     else if (w <= 860 ) {
 
-        
+        // getSidebarI.style.opacity = "1";
         getMenuBar.style.visibility = "visible";
-        getMenuBar.style.opacity = "1";
         getSidebar.style.visibility = "visible"; 
-        // alert('w <= 860 ')
+     
     }
     if (w > 860) {
 
-        // togglemenuBar = false;
         getMenuBar.style.visibility = "visible";
+        getMenuBar.style.opacity = "0";
         getSidebar.style.width = "0";
         getSidebarI.style.opacity = "0";
-        getMenuBar.style.opacity = "0";
-        // alert('w > 860')
-           
+        togglemenuBar = false;
     }    
-    
+
+
+   
 }, 100);
 
     
@@ -63,12 +62,12 @@ let toggleMenuBar = function () {
 
             getMenuBarClose.style.opacity = "0";
             getSidebar.style.visibility = "visible";
-            getSidebar.style.width = "30vw";
-            getSidebarI.style.opacity = "1";
             getSidebarI.style.visibility = "visible";
+            getSidebarI.style.opacity = "1";
             getMenuBar.style.opacity = "0";
+            getSidebar.style.width = "40vw";
 
-          
+                   
         
         togglemenuBar = true;
         
@@ -93,3 +92,78 @@ let toggleMenuBar = function () {
 
 
 
+
+
+setInterval(() => {
+    
+    let getMenuBar = document.body.querySelector("#mainHead .nav-main #menuBar");
+    let w = window.innerWidth;
+
+    if (togglemenuBar === false && w <= 600 )  {
+
+        getMenuBar.style.opacity = "1";
+    }
+
+    else if (togglemenuBar === true && w <= 600 )  {
+
+        getMenuBar.style.opacity = "0";
+    }
+    
+    if ( togglemenuBar === false && w <= 860) {
+        
+        getMenuBar.style.opacity = "1";
+    }
+    else if ( togglemenuBar === true && w <= 860) {
+        
+        getMenuBar.style.opacity = "0";
+    }
+    
+    // if ( togglemenuBar === false && w <= 900) {
+
+    //     getMenuBar.style.opacity = "1";
+    // }
+    // else if ( togglemenuBar === true && w <= 900) {
+
+    //     getMenuBar.style.opacity = "0";
+    // }
+    else if (w > 900) {
+
+    getMenuBar.style.opacity = "0";
+    }
+    
+}, 100);
+
+
+
+
+
+
+
+
+// setInterval(() => {
+    
+   
+//     let getSidebar = document.body.querySelector("#mainHead .nav-sidebar");
+//     let getSidebarI = document.body.querySelector("#mainHead .nav-sidebar i");
+//     let w = window.innerWidth;
+
+//     if (togglemenuBar === false && w <= 600 )  {
+//         getSidebar.style.width = "55vw";
+//         getSidebarI.style.opacity = "1";
+//     }
+//     else if ( togglemenuBar === false && w <= 1150) {
+        
+//         getSidebar.style.width = "40pw";
+//         getSidebarI.style.opacity = "1";
+//     }
+//     else if ( togglemenuBar === false && w <= 1200) {
+
+//         getSidebar.style.width = "35vw";   
+//         getSidebarI.style.opacity = "1";
+//     }
+//     else if (w > 1150) {
+//         getSidebar.style.width = "0"
+//     getSidebarI.style.opacity = "0";
+//     }
+    
+// }, 100);

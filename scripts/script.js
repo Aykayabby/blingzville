@@ -87,6 +87,10 @@ let toggleNavA = function () {
 
     if (toggleNavStatusA === false ) {
         
+
+        togglemenuBar = false;
+        getSidebarI.style.opacity = "0";
+
         getMainHead.style.display = "block"
 
         getaOne.style.color = "gray"
@@ -157,6 +161,8 @@ let toggleNavB = function () {
 
     if (toggleNavStatusB === false ) {
 
+        togglemenuBar = false;
+        getSidebarI.style.opacity = "0";
 
         if (toggleNavStatus === false && screen.width > "840") {
             getSidebarI.style.opacity = "0";
@@ -223,6 +229,9 @@ let toggleNavC = function () {
 
     if (toggleNavStatusC === false ) {
 
+        togglemenuBar = false;
+        getSidebarI.style.opacity = "0";
+
         getMainHead.style.display = "block"
 
         if (toggleNavStatus === false && screen.width > "840") {
@@ -260,6 +269,8 @@ let toggleNavC = function () {
 
 let toggleNavD = function () {
 
+    
+
     let getMainHead = document.body.querySelector("#mainHead")
 
     let getSidebarI = document.body.querySelector("#mainHead .nav-sidebar i");
@@ -273,6 +284,7 @@ let toggleNavD = function () {
     if (toggleNavStatus === false && screen.width > "840") {
         getSidebarI.style.opacity = "0";
         getSidebarI.style.visibility = "hidden";  
+        
        }
 
 
@@ -293,6 +305,9 @@ let toggleNavD = function () {
     let getSidebar = document.body.querySelector("#mainHead .nav-sidebar");
 
     if (toggleNavStatusD === false ) {
+
+        togglemenuBar = false;
+        getSidebarI.style.opacity = "0";
 
         getMainHead.style.display = "block"
 
