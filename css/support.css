@@ -88,8 +88,10 @@
         letter-spacing: 1.5px;
         
     }
+
+    /* FOOTER */
         #D footer{
-            margin-left: 10px;
+            margin-left: 10%;
         }
         #D ul{
            display: block;
@@ -108,6 +110,7 @@
             margin: 0;
         }
 }
+
 
 /* 
 #E{

@@ -269,7 +269,7 @@
   @media only screen and (max-width: 600px) {
 
     #B{
-        height: 325vh;
+        height: 300vh;
         overflow-y: auto;
     }
 
@@ -338,7 +338,7 @@
      }
 
      #B footer{
-         margin-left: 10px;
+         margin-left: 10%;
      }
      #B ul{
         display: block;
@@ -353,4 +353,5 @@
          font-size: 20px;
      }
   }
+
 

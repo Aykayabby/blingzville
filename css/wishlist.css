@@ -20,28 +20,34 @@
         font-size: 30px;
         padding: 200px 0 0 0;
     }
-    #C footer{
-        margin-left: 10px;
-        width: 85vw;
-        
-    }
+  
     #C ul{
         display: block;
         
     }
     
-    #C footer li{
-        border-right: none;
-        word-wrap: break-word;
-        padding: 5px;
-        font-size: 15px;
-        line-height: 20px;
-        
-    }
-    #C footer p{
-        font-size: 15px;
-        
-    }
+   
+/* Footer */
+
+#C footer{
+    margin-left: 10%;
+}
+#C ul{
+   display: block;
+     word-wrap: break-word;
+     width: 80vw;
+ }
+#C footer li{
+    border-right: none;
+    border-left: 1px solid gray;
+    padding: 5px;
+}
+#C footer p{
+    font-size: 20px;
+    padding: 15px 0;
+    width: 80vw;
+    margin: 0;
+}
 }
 
 

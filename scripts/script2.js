@@ -21,6 +21,7 @@ let toggleMenu = function () {
         getNav.style.float = "left";
         getNav.style.top = "30%";
         getHomeDiv.style.height = "80vh"
+        getHomeDiv.style.margin = "10% 0 0 -10%"
 
         getNav1.style.opacity = "0";
         getMenuBar.style.opacity = "0";
@@ -37,6 +38,7 @@ let toggleMenu = function () {
     else if (toggleMenuStatus === true) {
         
         getHomeDiv.style.height = "290px"
+        getHomeDiv.style.margin = "15% 0 0 -15%"
         getNav.style.display = "none";
         getNav1.style.opacity = "1";
         getMenuBar.style.opacity = "1";
