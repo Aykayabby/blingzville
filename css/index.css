@@ -594,9 +594,9 @@ body, html{
     }
 
     #H #menu{
-        top: 20px;
+        top: 30px;
         float: left;
-        left: 75%;
+        left: 82%;
         font-size: 30px;
         color: whitesmoke;
         position: absolute;
