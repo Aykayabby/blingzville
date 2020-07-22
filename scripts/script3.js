@@ -3,6 +3,53 @@
 let togglemenuBar = false;
 
 
+setInterval(() => {
+    
+    let getMenuBar = document.body.querySelector("#mainHead .nav-main #menuBar");
+    let getSidebar = document.body.querySelector("#mainHead .nav-sidebar");
+    let getSidebarI = document.body.querySelector("#mainHead .nav-sidebar i");
+    var w = window.innerWidth;
+
+ 
+ 
+ 
+     if (togglemenuBar === false && w <= 860) {
+        getMenuBar.style.visibility = "visible";
+        getMenuBar.style.opacity = "1";
+        getSidebar.style.visibility = "visible";
+        // alert('false && w <= 860')
+        
+    }
+    else if (togglemenuBar === true && w <= 860) {
+        
+        getMenuBar.style.visibility = "hidden";
+        getMenuBar.style.opacity = "0";
+        getSidebar.style.visibility = "visible";
+        // alert('true && w <= 860')
+    }
+    else if (w <= 860 ) {
+
+        
+        getMenuBar.style.visibility = "visible";
+        getMenuBar.style.opacity = "1";
+        getSidebar.style.visibility = "visible"; 
+        // alert('w <= 860 ')
+    }
+    if (w > 860) {
+
+        togglemenuBar = false;
+        getMenuBar.style.visibility = "visible";
+        getSidebar.style.width = "0";
+        getSidebarI.style.opacity = "0";
+        getMenuBar.style.opacity = "0";
+        // alert('w > 860')
+           
+    }    
+    
+}, 100);
+
+    
+
 
 let toggleMenuBar = function () {
 
@@ -43,31 +90,6 @@ let toggleMenuBar = function () {
   
 };
 
-setInterval(() => {
-    
-    let getMenuBar = document.body.querySelector("#mainHead .nav-main #menuBar");
-    if (screen.width < "860") {
-        getMenuBar.style.visibility = "visible";
-        getMenuBar.style.opacity = "1";
-        
-    }
-    if (togglemenuBar === true && screen.width < "860") {
-        getMenuBar.style.visibility = "visible";
-        getMenuBar.style.opacity = "0";
-        
-    }
-    if (togglemenuBar === true && screen.width < "860") {
-        getMenuBar.style.visibility = "visible";
-        getMenuBar.style.opacity = "0";
-        
-    }
-    if (screen.width > "860") {
-        getMenuBar.style.visibility = "visible";
-        getMenuBar.style.opacity = "0";
- 
-    }
-}, 500);
 
-    
 
 
