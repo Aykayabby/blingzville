@@ -45,8 +45,6 @@ let toggleNavH = function () {
         getMainHome.style.padding = "auto auto auto 10%";
         getMainHomeDiv.style.margin = "0 auto 0 10%";
         getMainHomeDiv.style.padding = "20% auto 0 0";
-        // getMainHomeDiv.style.padding = "0 0 70px 50px";
-        getMainHomeDiv.style.height = "300px";
         getMainHomeDiv.style.width = "auto";
         getMain.style.display = "none";
         getAside.style.display = "none";
@@ -65,7 +63,7 @@ let toggleNavH = function () {
 
             if (w > "804") {
                 getMainHomeDiv.style.width = "70vw";
-                
+                getMainHomeDiv.style.height = "300px";
                 getMainHomeDiv.style.padding = "50px auto 20px 50px"
                 getMainHomeDiv.style.margin = "0 auto 0 5%";
             }

@@ -48,7 +48,7 @@ let toggleMenu = function () {
                 getHomeDiv.style.width = "50vw";
                 getHomeDiv.style.height = "300px";
                 getHomeDiv.style.margin = "0 auto 0 10%";
-                getHomeDiv.style.padding = "50px 50px 0 50px"
+                getHomeDiv.style.padding = "50px"
                 
                
             }
@@ -87,7 +87,7 @@ let toggleMenu = function () {
                 getHomeDiv.style.width = "50vw";
                 getHomeDiv.style.height = "300px";
                 getHomeDiv.style.margin = "0 auto 0 10%";
-                getHomeDiv.style.padding = "50px 50px 0 50px"
+                getHomeDiv.style.padding = "50px"
                 
             }
          
