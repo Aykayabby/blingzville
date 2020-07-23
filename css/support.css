@@ -91,6 +91,10 @@
 }
 
 @media only screen and (max-width: 800px){
+    #D{
+        height: 115vh;
+    }
+    
     #D h1{
         padding-bottom: 50px;
         font-size: 35px;
@@ -118,6 +122,11 @@
     }
 }
 @media only screen and (max-width: 600px){
+
+    #D{
+        height: 130vh;
+    }
+
     #D h1{
         padding-bottom: 20px;
     }

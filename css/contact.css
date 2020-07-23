@@ -139,7 +139,7 @@
     color: gray;
   }
 
-  @media only screen and (max-width: 1148px) {
+  @media only screen and (max-width: 1148px) and (min-width: 850px) {
 
     #B{
         font-size: 20px;
@@ -158,17 +158,20 @@
         font-size: 50px;
         line-height: 60px;
     }
+    #B #B1 p{
+        margin-left: 30px;
+    }
   }
 
 
-  @media only screen and (max-width: 840px) {
+  @media only screen and (max-width: 1000px) {
 
     #B{
         font-size: 25px;
         line-height: 28px;
         text-align: center;
         padding-left: 0;
-        height: 260vh;
+        height: 223vh;
     }
 #B #B1{
     display: flex;
@@ -190,7 +193,7 @@
 #B div{
     width: 100vw;
     overflow: hidden;
-    margin-left: 20%;
+    margin-left: 10%;
     
 }
 
@@ -272,11 +275,11 @@
 
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
 
     #B{
-        height: 300vh;
-        overflow-y: auto;
+        height: 265vh;
+        overflow-y: hidden;
     }
 
     #B div{
@@ -287,8 +290,8 @@
         visibility: visible;
     }
     #B #B1 p{
-        line-height: 20px;
-        font-size: 18px;
+        line-height: 22px;
+        font-size: 22px;
         
     }
 
