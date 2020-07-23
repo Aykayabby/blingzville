@@ -3,7 +3,7 @@
     background: black;
     display: none;
     position: relative;
-    height: 125vh;
+    height: 140vh;
     color: white;
     overflow: hidden;
 }
@@ -47,6 +47,45 @@
     
 }
 
+#D form{
+    background-color: rgb(35, 34, 34);
+    display: block;
+    width: 20vw;
+    margin-left: 38vw;
+    padding: 20px 0;
+    border-radius: 30px;
+    animation: 4s fade linear infinite;
+    animation-fill-mode: both;
+    visibility: hidden;
+
+}
+
+@keyframes fade {
+    0% {
+      opacity: 0.8;
+    }
+    30% {
+      visibility: visible;
+      opacity: 1;
+      background: rgb(79, 75, 75);
+    }
+    50% {
+      visibility: visible;
+      opacity: 1;
+      background: rgb(245, 231, 231);
+    }
+    80% {
+      visibility: visible;
+      opacity: 1;
+      background: rgb(99, 94, 94);
+    }
+    100% {
+      visibility: visible;
+      opacity: 0.8;
+    }
+  }
+
+
 #D footer{
     margin-top: 20%;
 }
@@ -69,6 +108,14 @@
         line-height: 30px;
         letter-spacing: 2px;
     }
+
+    #D form{
+        display: block;
+        width: 30vw;
+        margin-left: 35vw;
+        padding: 8px 0;
+        border-radius: 20px;
+    }
 }
 @media only screen and (max-width: 600px){
     #D h1{
@@ -87,6 +134,15 @@
         line-height: 22px;
         letter-spacing: 1.5px;
         
+    }
+
+    
+    #D form{
+        display: block;
+        width: 40vw;
+        margin-left: 30vw;
+        padding: 15px 0;
+        border-radius: 35px;
     }
 
     /* FOOTER */

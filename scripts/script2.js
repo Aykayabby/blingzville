@@ -4,7 +4,8 @@ let toggleMenuStatus = false;
 
 let toggleMenu = function () {
 
-    let width = screen.width;    
+    // let width = screen.width;
+    let getMainHome = document.body.querySelector("#H")    
     let getHomeDiv = document.body.querySelector("#H #HomeDiv"); 
     let getNav = document.body.querySelector("#H #nav"); 
     let getNav1 = document.body.querySelector("#H #nav1"); 
@@ -19,10 +20,11 @@ let toggleMenu = function () {
         getNav.style.display = "block";
         getNav.style.position = "absolute";
         getNav.style.float = "left";
-        getNav.style.top = "30%";
-        getHomeDiv.style.height = "80vh"
-        getHomeDiv.style.margin = "10% 0 0 -10%"
-
+        getNav.style.top = "25%";
+        getHomeDiv.style.height = "300px"
+        getHomeDiv.style.margin = "0 0 0 0"
+        getHomeDiv.style.padding = "50px 0 70px 50px"
+     
         getNav1.style.opacity = "0";
         getMenuBar.style.opacity = "0";
         getCloseMenu.style.display = "block";
@@ -31,14 +33,29 @@ let toggleMenu = function () {
         getHidden2.style.visibility = "hidden";
         getHidden3.style.visibility = "hidden";
         
+        setInterval(() => {
+            let w = window.innerWidth;
+
+            if (w > "804") {
+                getHomeDiv.style.width = "70vw";
+                getHomeDiv.style.padding = "50px auto 20px 50px"
+                getHomeDiv.style.margin = "0 auto 0 5%";
+            }
+            if (w < "804") {
+                getHomeDiv.style.width = "50vw";
+                getHomeDiv.style.height = "300px";
+                getHomeDiv.style.margin = "0 auto 0 10%";
+                getHomeDiv.style.padding = "50px 50px 20px 50px"
+               
+            }
+        }, 10);
+               
         
 
         toggleMenuStatus = true
     }
     else if (toggleMenuStatus === true) {
         
-        getHomeDiv.style.height = "290px"
-        getHomeDiv.style.margin = "15% 0 0 -15%"
         getNav.style.display = "none";
         getNav1.style.opacity = "1";
         getMenuBar.style.opacity = "1";
@@ -46,19 +63,31 @@ let toggleMenu = function () {
         getHidden.style.visibility = "visible";
         getHidden2.style.visibility = "visible";
         getHidden3.style.visibility = "visible";
+     
 
+        getMainHome.style.display = "block";
+        getHomeDiv.style.height = "300px";
+        
+       
 
-        if (togglemenuBar === false && width <= "600px") {
-            getHomeDiv.style.height = "320px"
-           }
-           else if (togglemenuBar === false &&  width > "600px" || width <= "825px") {
-            getHomeDiv.style.height = "220px"
-           }
-           else if (togglemenuBar === false && width > "825px") {
-            getHomeDiv.style.height = "290px"
-           }
-        
-        
+        setInterval(() => {
+            let w = window.innerWidth;
+
+            if (w > "804") {
+                getHomeDiv.style.width = "70vw";
+                getHomeDiv.style.margin = "0 auto 0 5%";
+            }
+            if (w < "804") {
+                getHomeDiv.style.width = "50vw";
+                getHomeDiv.style.height = "300px";
+                getHomeDiv.style.margin = "0 auto 0 10%";
+                getHomeDiv.style.padding = "50px 50px 20px 50px"
+                
+            }
+        }, 10);
+                
+
+    
 
         toggleMenuStatus = false
     }

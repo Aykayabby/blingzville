@@ -14,22 +14,16 @@ setInterval(() => {
  
  
      if (togglemenuBar === false && w <= 860) {
-         
-        // getSidebarI.style.opacity = "1";
         getMenuBar.style.visibility = "visible";
         getSidebar.style.visibility = "visible";
         
     }
     else if (togglemenuBar === true && w <= 860) {
-        
-        // getSidebarI.style.opacity = "1";
         getMenuBar.style.visibility = "hidden";
         getSidebar.style.visibility = "visible";
 
     }
     else if (w <= 860 ) {
-
-        // getSidebarI.style.opacity = "1";
         getMenuBar.style.visibility = "visible";
         getSidebar.style.visibility = "visible"; 
      
@@ -117,53 +111,9 @@ setInterval(() => {
         
         getMenuBar.style.opacity = "0";
     }
-    
-    // if ( togglemenuBar === false && w <= 900) {
-
-    //     getMenuBar.style.opacity = "1";
-    // }
-    // else if ( togglemenuBar === true && w <= 900) {
-
-    //     getMenuBar.style.opacity = "0";
-    // }
     else if (w > 900) {
 
     getMenuBar.style.opacity = "0";
     }
     
 }, 100);
-
-
-
-
-
-
-
-
-// setInterval(() => {
-    
-   
-//     let getSidebar = document.body.querySelector("#mainHead .nav-sidebar");
-//     let getSidebarI = document.body.querySelector("#mainHead .nav-sidebar i");
-//     let w = window.innerWidth;
-
-//     if (togglemenuBar === false && w <= 600 )  {
-//         getSidebar.style.width = "55vw";
-//         getSidebarI.style.opacity = "1";
-//     }
-//     else if ( togglemenuBar === false && w <= 1150) {
-        
-//         getSidebar.style.width = "40pw";
-//         getSidebarI.style.opacity = "1";
-//     }
-//     else if ( togglemenuBar === false && w <= 1200) {
-
-//         getSidebar.style.width = "35vw";   
-//         getSidebarI.style.opacity = "1";
-//     }
-//     else if (w > 1150) {
-//         getSidebar.style.width = "0"
-//     getSidebarI.style.opacity = "0";
-//     }
-    
-// }, 100);
