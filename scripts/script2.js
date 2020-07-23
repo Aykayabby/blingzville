@@ -4,7 +4,6 @@ let toggleMenuStatus = false;
 
 let toggleMenu = function () {
 
-    // let width = screen.width;
     let getMainHome = document.body.querySelector("#H")    
     let getHomeDiv = document.body.querySelector("#H #HomeDiv"); 
     let getNav = document.body.querySelector("#H #nav"); 
@@ -18,10 +17,10 @@ let toggleMenu = function () {
     if (toggleMenuStatus === false ) {
         
         getNav.style.display = "block";
-        getNav.style.position = "absolute";
-        getNav.style.float = "left";
-        getNav.style.top = "25%";
+        getNav.style.opacity = "1";
+       
         getHomeDiv.style.height = "300px"
+        getHomeDiv.style.background = "none"
         getHomeDiv.style.margin = "0 0 0 0"
         getHomeDiv.style.padding = "50px 0 70px 50px"
      
@@ -36,18 +35,24 @@ let toggleMenu = function () {
         setInterval(() => {
             let w = window.innerWidth;
 
-            if (w > "804") {
+            if (toggleMenuStatus === false && w > "804") {
                 getHomeDiv.style.width = "70vw";
                 getHomeDiv.style.padding = "50px auto 20px 50px"
                 getHomeDiv.style.margin = "0 auto 0 5%";
+                getNav.style.top = "10%";
+                
+                
             }
-            if (w < "804") {
+            if (toggleMenuStatus === false && w < "804") {
+
                 getHomeDiv.style.width = "50vw";
                 getHomeDiv.style.height = "300px";
                 getHomeDiv.style.margin = "0 auto 0 10%";
-                getHomeDiv.style.padding = "50px 50px 20px 50px"
+                getHomeDiv.style.padding = "50px 50px 0 50px"
+                
                
             }
+      
         }, 10);
                
         
@@ -56,6 +61,7 @@ let toggleMenu = function () {
     }
     else if (toggleMenuStatus === true) {
         
+        getHomeDiv.style.background = "rgba(81, 81, 74, 0.9)"
         getNav.style.display = "none";
         getNav1.style.opacity = "1";
         getMenuBar.style.opacity = "1";
@@ -63,27 +69,28 @@ let toggleMenu = function () {
         getHidden.style.visibility = "visible";
         getHidden2.style.visibility = "visible";
         getHidden3.style.visibility = "visible";
-     
+        getHomeDiv.style.visibility = "visible"
 
         getMainHome.style.display = "block";
-        getHomeDiv.style.height = "300px";
+        // getHomeDiv.style.height = "300px";
         
        
 
         setInterval(() => {
             let w = window.innerWidth;
 
-            if (w > "804") {
+            if (toggleMenuStatus === true && w > "804") {
                 getHomeDiv.style.width = "70vw";
                 getHomeDiv.style.margin = "0 auto 0 5%";
             }
-            if (w < "804") {
+            if (toggleMenuStatus === true && w < "804") {
                 getHomeDiv.style.width = "50vw";
                 getHomeDiv.style.height = "300px";
                 getHomeDiv.style.margin = "0 auto 0 10%";
-                getHomeDiv.style.padding = "50px 50px 20px 50px"
+                getHomeDiv.style.padding = "50px 50px 0 50px"
                 
             }
+         
         }, 10);
                 
 

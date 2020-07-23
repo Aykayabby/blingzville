@@ -370,6 +370,27 @@ body, html{
     cursor: pointer;
 }
 
+#H #nav{
+    top: 15%;
+    margin-left: 0;
+    position: absolute;
+    left: 10%;
+}
+
+#H #nav ul{
+    background-color: rgb(64, 56, 56);
+    width: 50vw;
+    height: 80vh;
+    
+}
+
+#H #nav li{
+    padding: 20px 50px 20px 50px;
+    margin-bottom: 0;
+    background-color: rgb(64, 56, 56);
+    width: 45vw;
+}
+
 #H nav ul i{
     display: block;
     margin-top: 3px;
