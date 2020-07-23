@@ -177,24 +177,30 @@
  #B #B1 h1{
      font-size: 40px;
      line-height: 50px;
+     margin-bottom: -2%;
  }
 
  #B #B1 i{
     font-size: 15px;
 }
+ #B #B1 p{
+   margin-top: 10px;
+}
 
 #B div{
-    width: 385px;
+    width: 100vw;
     overflow: hidden;
     margin-left: 20%;
-    border: 1px solid black;
+    
 }
 
 #B #backSlide{
     margin: 50px 0;
-    width: 2000px;
+    height: 42vh;
+    width: 360vw;
     position: relative;
     animation: slider 15s linear infinite backwards;
+  
 }
 
 
@@ -203,34 +209,34 @@
         left: 0;
     }
     20% {
-        left: 0;
+        left: -5vw;
     }
     25% {
-        left: -400px;
+        left: -90vw;
     }
     45% {
-        left: -400px;
+        left: -90vw;
     }
     50% {
-        left: -800px;
+        left: -180vw;
     }
     70%{
-        left: -800px;
+        left: -180vw;
     }
     75%{
-        left: -1200px;
+        left: -270vw;
     }
     95% {
-        left: -1200px;
+        left: -270vw;
     }
     100% {
-        left: -1600px;
+        left: -350vw;
     }
 }
 
 #B #backSlide img{
-    width: 400px;
-    height: 300px;
+    width: 87vw;
+    height: 40vh;
     
 }
 
@@ -278,7 +284,7 @@
     }
 
     #B #B1 i{
-        visibility: hidden;
+        visibility: visible;
     }
     #B #B1 p{
         line-height: 20px;

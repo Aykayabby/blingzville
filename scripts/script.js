@@ -1,4 +1,5 @@
 // Script for Displaying or hiding top nav  
+// Also script for navigating through different pages in the website
 
 let toggleNavStatus = false
 let toggleNavStatusA = false
@@ -19,11 +20,16 @@ let toggleNavH = function () {
     let geti5 = document.body.querySelector("#mainHead ul #i5")
     // let geti6 = document.body.querySelector("#mainHead ul #i6")
     let getMainHome = document.body.querySelector("#H")
+    let getMainHomeDiv = document.body.querySelector("#H #HomeDiv");
     let getMain = document.body.querySelector("#A")
     let getAside = document.body.querySelector("#B")
     let getSection1 = document.body.querySelector("#C")
     let getSection2 = document.body.querySelector("#D")
     // let getSection3 = document.body.querySelector("#E")
+
+
+    // Screen width:
+    let width = screen.width; 
 
     
     let getSidebarI = document.body.querySelector("#mainHead .nav-sidebar i");
@@ -51,9 +57,89 @@ let toggleNavH = function () {
         // getSection3.style.display = "none";
 
         getSidebar.style.width = "0";
-    }  
+
+        getMainHomeDiv.style.margin = "10% 0 0 10%"
+
+
+        toggleNavStatus = true;
+
+    }
+
+    // else if (toggleNavStatus === true ) {
+
+        
+    //     // getMainHead.style.display = "none"
+    //     // geti1.style.width = "15px"
+    //     // geti2.style.width = "0"
+    //     // geti3.style.width = "0"
+    //     // geti4.style.width = "0"
+    //     // geti5.style.width = "0"
+    //     // // geti6.style.width = "0"
+    //     // getMainHome.style.display = "block";
+    //     // getMain.style.display = "none";
+    //     // getAside.style.display = "none";
+    //     // getSection1.style.display = "none";
+    //     // getSection2.style.display = "none";
+
+    //     // getSidebarI.style.opacity = "0";
+    //     // getSidebarI.style.visibility = "hidden";  
+    //     // // getSection3.style.display = "none";
+
+    //     // getSidebar.style.width = "0";
+
+    //     getMainHomeDiv.style.margin = "10% 0 0 50%"
+
+
+    //     toggleNavStatus = false;
+
+    // }
 
 }
+
+
+
+        // //   Script for Main Home Div:
+ 
+        // setInterval(() => {
+        
+        //     let getMainHomeDiv = document.body.querySelector("#H #HomeDiv");
+        //     let w = window.innerWidth;
+        
+        //             if (toggleNavStatus === true && w <= "600px") {
+        //                 getMainHomeDiv.style.height = "320px";
+        //                 alert('width <= "600px"');
+
+        //                 getMainHomeDiv.style.margin = "0 0 0 10%"
+
+        //                 toggleNavStatus = false;
+
+        //             }
+        //             else if ( toggleNavStatus === true && w > "600px" && width <= "825px") {
+        //                 getMainHomeDiv.style.height = "220px";
+        //                 alert('width > "600px"');
+
+        //                 getMainHomeDiv.style.margin = "0 0 0 10%"
+
+        //                 toggleNavStatus = false;
+        //             }
+        //             else if (toggleNavStatus === true && w > "825px") {
+        //                 getMainHomeDiv.style.height = "290px";
+        //                 alert('width > "825px"');
+
+        //                 getMainHomeDiv.style.margin = "0 0 0 10%"
+
+
+        //                 toggleNavStatus = false;
+        //             }
+                
+                
+        // }, 100);
+
+
+
+
+
+
 
 
 let toggleNavA = function () {
